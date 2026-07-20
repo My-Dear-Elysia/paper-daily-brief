@@ -1,0 +1,5 @@
+[project]
+name = "daily-brief"
+version = "0.2.0"
+requires-python = ">=3.10"
+# Dependencies inherited via --system-site-packages

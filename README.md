@@ -1,127 +1,109 @@
 # Paper Daily Brief / 论文日报
 
-Daily medical AI paper briefing system.  
-Searches PubMed → fetches full text → DeepSeek analysis → structured daily/weekly/monthly/quarterly/yearly reports.
+Automated medical AI paper digest system.  
+PubMed search → quality filtering → PMC full text → DeepSeek structured analysis → daily/weekly/monthly/quarterly/yearly reports.
 
-Also includes a **learning recommendation module** that tracks your course progress and suggests what to study next.
-
-## Architecture
-
-```
-PubMed (4 queries)
-    │
-    ▼
-Fetch details + abstracts
-    │
-    ├── Check PMC free full text
-    │
-    ▼
-DeepSeek structured analysis
-    │
-    ▼
-Markdown report (daily_YYYY-MM-DD.md)
-    │
-    ▼
-  01_时间链/
-  ├── 日报/       ← daily briefs
-  └── 汇总/       ← weekly / monthly / quarterly / yearly summaries
-```
+Built by a medical student (MD) for medical AI workflow automation.
 
 ## Features
 
-- **Daily brief**: 12 papers/day from 4 PubMed queries, DeepSeek-analyzed
-- **Journal IF filtering**: Built-in IF dictionary (~80 journals)
-- **PMC full text**: Auto-downloads and analyzes PMC open-access papers
-- **Weekly/Monthly/Quarterly/Yearly summaries**: Trend analysis + industry news (Tavily)
-- **Learning recommendation**: Tracks your course progress, suggests what to study today
-- **PubMed ⚠️ labels**: Warns about CAPTCHA on PubMed links, prioritizes DOI
+- **PubMed search** — 4 query groups, medical AI topic matching
+- **Journal IF filter** — built-in IF dictionary (~90 journals), IF > 5 only
+- **Journal blacklist** — Frontiers series, bioRxiv/medRxiv blocked
+- **PMC full text priority** — full text available → use full text, not abstract
+- **PubPeer integrity check** — auto-skip papers with integrity concerns
+- **Deduplication** — skip papers covered in the last 7 days
+- **Structured analysis** — domain / method / findings / limitations / relevance
+- **Multi-level summaries** — weekly → monthly → quarterly → yearly with trend analysis
+- **Industry news** — Tavily search for AI healthcare news
+- **Learning recommendation** — tracks course progress, suggests what to study
 
 ## Requirements
 
 - Python 3.10+
 - DeepSeek API key
-- Tavily API key (for news in summaries)
-- (Optional) DashScope/Qwen API key for OCR pipeline
+- Tavily API key (for weekly/monthly summaries)
 
-## Setup
+## Quick Start
 
 ```bash
-# 1. Clone
 git clone git@github.com:My-Dear-Elysia/paper-daily-brief.git
 cd paper-daily-brief
 
-# 2. Install dependencies
+# Optional: use uv for faster dependency management
+# uv venv --python /usr/bin/python3 --system-site-packages && source .venv/bin/activate
+
 pip install openai
 
-# 3. Set up environment
 export DEEPSEEK_API_KEY="sk-..."
 export TAVILY_API_KEY="tvly-..."
 
-# 4. Create output directories
-mkdir -p output/daily output/summaries output/planning
-
-# 5. Run
+# Daily brief
 python3 daily_brief_v02.py
-```
 
-## Usage
-
-### Daily brief (cron: 0 7 * * *)
-```bash
-python3 daily_brief_v02.py
-```
-
-### Summaries (cron: weekly Mon / monthly 1st / quarterly / yearly)
-```bash
+# Weekly / Monthly / Quarterly / Yearly summary
 python3 daily_brief_summary.py weekly
 python3 daily_brief_summary.py monthly
 python3 daily_brief_summary.py quarterly
 python3 daily_brief_summary.py yearly
 ```
 
+## Output
+
+```
+daily_2026-07-20.md
+├── Paper 1: A context-augmented LLM for precision oncology (Cancer Cell, IF:31.7)
+│   ├── Domain: precision oncology / RAG / LLM
+│   ├── Method: RAG framework with MOAlmanac knowledge base
+│   ├── Finding: 93% accuracy on real-world queries
+│   └── Relevance: High — deployable RAG solution for clinical LLM
+├── Paper 2: General-purpose LLMs outperform specialized clinical AI tools (Nat Med, IF:58.7)
+...
+weekly_2026-07-13.md  (trend clusters + industry news)
+monthly_2026-06.md     (aggregated monthly trends)
+quarterly_2026Q2.md     (quarterly landscape)
+yearly_2025.md          (annual review)
+```
+
+## Pipeline
+
+```
+PubMed (4 queries, 30 IDs)
+  │
+  ├── Journal blacklist  → discard Front*/bioRxiv/medRxiv
+  ├── IF > 5 filter
+  ├── 7-day dedup
+  ├── Topic relevance (medical AI keywords)
+  └── PubPeer integrity check
+  │
+  ▼
+PMC full text check  →  DeepSeek structured analysis
+  │
+  ▼
+Markdown report → daily_YYYY-MM-DD.md
+  │
+  ▼
+Aggregator → weekly / monthly / quarterly / yearly summaries
+```
+
+## File Structure
+
+```
+├── daily_brief_v02.py        # Daily brief pipeline
+├── daily_brief_summary.py    # Multi-level summary aggregator
+├── pyproject.toml            # Project config (uv compatible)
+├── learning_tracker.json     # Course progress tracker
+└── example/
+    └── daily_2026-07-20.md   # Sample output
+```
+
 ## Configuration
 
-### Journal IF Dictionary
-Edit `JOURNAL_IF` in `daily_brief_v02.py` to add/update journal impact factors.
-
-### PubMed Queries
-Edit `QUERIES` in `daily_brief_v02.py` to customize search topics.
-
-### Learning Tracker
-Edit `learning_tracker.json` to update your course progress:
-```json
-{
-  "current_course": "Course Name",
-  "current_chapter": 1,
-  "total_chapters": 10,
-  "progress_pct": 10
-}
-```
-
-## Output Example
-
-```
-━━━ 今日简报 (2026-07-19) ━━━━━━━━━━━━━━━━━━━━
-📄 新论文 12 篇（PMC全文: 6篇）
-📌 最高IF: Cancer Cell (31.7) — A context-augmented LLM...
-📖 当前学习: CS231n — CNN架构（进度0%）
-⏭ 下一步：CS229 机器学习讲义
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-## Privacy
-
-- No data leaves your server except PubMed/Tavily API calls
-- DeepSeek API calls send paper abstracts only (no patient data)
-- All reports stored locally as Markdown files
-- API keys configured via environment variables, not hardcoded
-
-## Customization
-
-- Add more PubMed queries: edit `QUERIES` list
-- Add journal IFs: extend `JOURNAL_IF` dictionary
-- Change output directory: set `BASE` path
-- Add more learning courses: edit `learning_tracker.json`
+Edit these in the scripts:
+- `JOURNAL_IF` — add/update journal impact factors
+- `QUERIES` — customize PubMed search queries
+- `J_BLOCK` / `UNRELIABLE_DOMAINS` — extend blocklists
+- `BRIEF_DIR` / `SUMMARY_DIR` — change output paths
 
 ## License
 
