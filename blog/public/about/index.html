@@ -2,26 +2,30 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>关于 | Jerry Li</title>
+  <title>关于 | 李文韬</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="武汉大学临床医学八年制，医学 AI。">
+  <meta property="og:title" content="关于">
+  <meta property="og:description" content="武汉大学临床医学八年制，医学 AI。">
+  <meta property="og:url" content="https://jerryli.cn/about/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.ico?v=2">
   <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/theme.js"></script>
 </head>
 <body>
   <header>
-    <h1><a href="/">Jerry Li</a></h1>
+    <h1><a href="/">李文韬</a></h1>
     <nav>
       <a href="/">首页</a>
       <a href="/posts">博客</a>
-      <a href="/reports">定期报告</a>
-      <a href="/thoughts">随想</a>
       <a href="/methods">方法</a>
+      <a href="/reports">成长记录</a>
+      <a href="/thoughts">随想</a>
       <a href="/about">关于</a>
       <span class="theme-switch">
-        <a onclick="__setTheme('light')" id="t-light">浅色</a>
-        <a onclick="__setTheme('dark')" id="t-dark">深色</a>
-        <a onclick="__setTheme('system')" id="t-system">自动</a>
+        <span id="theme-toggle" title="切换亮暗"></span>
       </span>
     </nav>
   </header>
@@ -43,7 +47,9 @@
     </article>
   </main>
   <footer>
-    <p>© 2026 Jerry Li</p>
+    <p>© 2026 李文韬</p>
+    <p>Built with Hugo &amp; ❤️ · Hosted on Cloudflare</p>
   </footer>
+  <script>(()=>{const k='theme-pref';const t=document.getElementById('theme-toggle');const s='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';const m='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';function a(){const p=localStorage.getItem(k)||'dark';document.documentElement.setAttribute('data-theme',p);if(t)t.innerHTML=p==='dark'?m:s}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',a)}else{a()}document.addEventListener('click',e=>{if(e.target.closest('#theme-toggle')){const c=localStorage.getItem(k)||'dark';const n=c==='dark'?'light':'dark';localStorage.setItem(k,n);a()}})})();</script>
 </body>
 </html>

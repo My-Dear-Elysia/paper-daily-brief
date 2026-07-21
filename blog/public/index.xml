@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>首页 on Jerry Li</title>
+    <title>最近更新 on 李文韬</title>
     <link>https://jerryli.cn/</link>
-    <description>Recent content in 首页 on Jerry Li</description>
+    <description>Recent content in 最近更新 on 李文韬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/index.xml" rel="self" type="application/rss+xml" />
@@ -16,6 +16,24 @@
       <description>简介 李文韬（Jerry Li），武汉大学临床医学八年制在读，医学 AI 方向。
 兴趣 二次元、Galgame、炼金工房系列。
 联系方式  Email: wentaoli326@gmail.com GitHub: WentaoLi-Med 知乎：苏菲好可爱  </description>
+    </item>
+    
+    <item>
+      <title>博客诞生记</title>
+      <link>https://jerryli.cn/posts/first-post/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://jerryli.cn/posts/first-post/</guid>
+      <description>现在是北京时间 2026/7/21 22:03，我现在在宿舍，纪念我的博客在今天正式诞生。
+3 年前 CNBO 失利的那个晚上，我无法想象到，三年之后，我会坐在寝室，做着和之前的大佬类似的事情。从以前就想过，要在知乎上写回答，传播知识，但直到今天都没有行动。
+全球健康概论是 5/24 考完的，5/27 我正式决定要试着使用 AI/API/Agent，这简直就像是打开了潘多拉魔盒一样。到这个时间点，我发现我已经难以离开 AI 了，它给我的生活、学习带来了巨大的影响。我从以前只在新闻上看到的文心一言，到现在自己动手部署 Agent，是一个巨大的飞跃。
+刚上大学那段时间，我感受到了巨大的落差。实际上的大学生活远没有我原本想象的多姿多彩。也许是因为我是一个懒惰的人，也许是因为我与众不同，或者说在很多方面格格不入。总之，虽然也有不少喜悦，但我的前两年基本上是相当压抑的。我没有什么和其他人一样的爱好——不喜欢短视频，不喜欢看那些网文，不喜欢竞技，不喜欢刷分。我当时真的抱着&amp;quot;上大学就是为了在学校中享受生活学习知识&amp;quot;的想法，但很快这就破灭了。
+于是我开始疯狂地刷知乎，疯狂地看那些&amp;quot;哲学&amp;quot;的课程。确实对我影响不小，也让我意识到了，靠学校学习知识是完全不可能、甚至于有害的了。不过我当时对这些 PPT 大赛还抱有幻想，直到我真的参加了大创和医创赛，看着像我一样的人拿着学长学姐的论文做着花里胡哨的 PPT，说着一些自己都不相信的东西，老师和同学们都自欺欺人的时候，我最后放弃了。
+至少目前我的答案是，这个糟糕透顶的医学教育系统已经濒临崩溃。它筛选出优秀的&amp;quot;官僚&amp;quot;，不断纯化&amp;quot;善于包装和表演&amp;quot;的所谓的&amp;quot;精致利己主义者&amp;quot;。它不仅不能发掘人才，甚至还会打压和埋没人才。所以我做出了决定：在这个 AI 不断发展的时代，我希望成为一名兼具医学知识和会利用 AI 做出决策的人。我相信像我这样的年轻人会越来越多，但至少在这个时间段，我没有发现有多少真正这样做的人。身边的同学，不是卷绩点和综测，就是几乎完全摆烂。
+所以，我创建了这个博客，希望记录我的成长，也希望未来的某一天有人能看见这些，希望和我有着同样理想的人能看见，我们共同建设这个尚未被人看见的可能。
+我不觉得&amp;quot;21 世纪是生命科学的世纪&amp;quot;。尽管我曾经确实投入了两年的时间参加竞赛并最终获得了银牌。AI 的发展日新月异，如果不能打上这辆便车，反而沉浸于大学和医院这个保守、封闭的系统，甚至于自我麻痹，说着&amp;quot;环境确实不好，所以我们才要卷绩点和综测，卷论文找导师，争取将来拿帽子，升职加薪&amp;quot;的话，6 年的时间足以让这种人破碎幻想，甚至于怨天尤人。
+我有一个观点：一个大学生，不能意识到应试教育的弊端，反而为其歌功颂德，在大学里延续着高中的习惯，疯狂内卷，却从不、甚至于逃避反省自己的这套观念是否正确，当缩头乌龟的医学生的话，那么恐怕 6 年后的事业前景也不言而喻了。
+我写这些，是为了记录此时此刻我的理念，如果有志同道合的人看见的话，也欢迎和我交流。</description>
     </item>
     
     <item>

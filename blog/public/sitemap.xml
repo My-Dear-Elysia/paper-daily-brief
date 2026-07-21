@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jerryli.cn/posts/</loc>
+    <lastmod>2026-07-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jerryli.cn/about/</loc>
+    <lastmod>2026-07-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jerryli.cn/posts/first-post/</loc>
     <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jerryli.cn/reports/</loc>
@@ -11,10 +17,10 @@
     <loc>https://jerryli.cn/reports/daily/</loc>
     <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jerryli.cn/reports/daily/daily_2026-07-21/</loc>
+    <loc>https://jerryli.cn/</loc>
     <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jerryli.cn/</loc>
+    <loc>https://jerryli.cn/reports/daily/daily_2026-07-21/</loc>
     <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jerryli.cn/reports/daily/daily_2026-07-20/</loc>

@@ -1,69 +1,111 @@
 body {
-  font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  max-width: 720px;
+  font-family: 'Inter', 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 20px;
-  line-height: 1.8;
+  padding: 32px;
+  line-height: 2;
+  font-size: 22px;
+  color: #eee;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background: url('/images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+[data-theme="light"] body::before {
+  filter: brightness(0.7);
+}
+[data-theme="dark"] body::before {
+  filter: brightness(0.4) blur(3px);
 }
 [data-theme="light"] header,
 [data-theme="light"] main,
 [data-theme="light"] footer {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
   color: #333;
 }
 [data-theme="dark"] header,
 [data-theme="dark"] main,
 [data-theme="dark"] footer {
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(12px);
   color: #eee;
 }
 header {
   border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  padding: 15px 20px;
-  border-radius: 8px;
+  padding: 28px 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
 }
 [data-theme="dark"] header { border-bottom-color: #444; }
-header h1 { margin: 0; font-size: 1.5em; }
+header h1 { margin: 0; font-size: 56px; font-weight: 600; }
 header h1 a { color: #333; text-decoration: none; }
 [data-theme="dark"] header h1 a { color: #eee; }
-nav { margin-top: 8px; display: flex; align-items: center; flex-wrap: wrap; }
-nav a { margin-right: 15px; color: #666; text-decoration: none; font-size: 0.9em; }
-[data-theme="dark"] nav a { color: #aaa; }
-nav a:hover { color: #000; }
-[data-theme="dark"] nav a:hover { color: #fff; }
+nav { margin-top: 12px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+nav a {
+  color: #666;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+[data-theme="dark"] nav a { color: #bbb; }
+nav a:hover { background: rgba(128,128,128,0.12); color: #000; }
+[data-theme="dark"] nav a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.subtitle {
+  margin-top: -8px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #888;
+}
+[data-theme="dark"] .subtitle { color: #aaa; }
 .theme-switch {
   margin-left: auto;
-  font-size: 0.85em;
+  font-size: 1.2em;
 }
-.theme-switch a { margin-left: 8px; cursor: pointer; color: #666; text-decoration: none; }
-[data-theme="dark"] .theme-switch a { color: #aaa; }
-.theme-switch a.active { font-weight: bold; color: #000; }
-[data-theme="dark"] .theme-switch a.active { color: #fff; }
-.theme-switch a:hover { color: #000; }
-[data-theme="dark"] .theme-switch a:hover { color: #fff; }
+.theme-switch span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s, transform 0.2s;
+  color: inherit;
+}
+.theme-switch span:hover { background: rgba(128,128,128,0.2); transform: rotate(15deg); }
 main {
   min-height: 60vh;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 32px;
+  border-radius: 12px;
+  font-size: 22px;
+  line-height: 2;
 }
+main h2 { font-size: 40px; font-weight: 600; margin-top: 0; }
 footer {
   border-top: 1px solid #eee;
-  padding-top: 15px;
+  padding-top: 18px;
   margin-top: 30px;
-  font-size: 0.85em;
+  font-size: 14px;
   color: #999;
   text-align: center;
-  padding: 15px 20px;
-  border-radius: 8px;
+  padding: 18px 24px;
+  border-radius: 12px;
+  line-height: 1.7;
 }
 [data-theme="dark"] footer { border-top-color: #444; color: #aaa; }
 article h2 { margin-top: 0; }
-time { color: #999; font-size: 0.85em; }
+time { color: #999; font-size: 14px; }
+[data-theme="dark"] time { color: #bbb; }
 a { color: #2563eb; }
 [data-theme="dark"] a { color: #6ea8fe; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
+ul { padding-left: 24px; }
+li { margin-bottom: 10px; }
