@@ -41,18 +41,17 @@ nav a:hover { color: #000; }
 }
 [data-theme="dark"] .theme-switch { border-left-color: #555; }
 .theme-switch span {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 36px;
   height: 36px;
-  line-height: 36px;
-  text-align: center;
-  border-radius: 50%;
   cursor: pointer;
-  text-decoration: none;
-  background: rgba(255,255,255,0.3);
-  transition: background 0.2s;
+  border-radius: 50%;
+  transition: background 0.2s, transform 0.2s;
+  color: inherit;
 }
-.theme-switch span:hover { background: rgba(255,255,255,0.6); }
+.theme-switch span:hover { background: rgba(128,128,128,0.2); transform: rotate(15deg); }
 main {
   min-height: 60vh;
   padding: 20px;
