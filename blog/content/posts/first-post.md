@@ -27,9 +27,9 @@ date: 2026-07-21
 
 ### 一些链接
 
-- [L.M.Sherlock](https://www.zhihu.com/people/L.M.Sherlock) — 知乎
-- [常之远](https://www.zhihu.com/people/chang-zhi-yuan-19/columns) — 知乎专栏
-- [SurviveSJTU](https://survivesjtu.gitbook.io/survivesjtumanual) — GitBook
-- [残梦中的车陷](https://www.zhihu.com/people/can-meng-zhong-de-che-xian) — 知乎
-- [Kirigaya](https://kirigaya.cn/) — 博客
-- [TuskedEvening0's Blog](https://tuskede0.top/2026/06/22/xatu-iot-students-survival-guide/) — 西安工大物联网生存指南
+- [L.M.Sherlock](https://www.zhihu.com/people/L.M.Sherlock)
+- [常之远](https://www.zhihu.com/people/chang-zhi-yuan-19/columns)
+- [SurviveSJTU](https://survivesjtu.gitbook.io/survivesjtumanual)
+- [残梦中的车陷](https://www.zhihu.com/people/can-meng-zhong-de-che-xian)
+- [Kirigaya](https://kirigaya.cn/)
+- [TuskedEvening0's Blog](https://tuskede0.top/2026/06/22/xatu-iot-students-survival-guide/)
