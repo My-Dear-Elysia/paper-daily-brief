@@ -1,10 +1,10 @@
 body {
   font-family: 'Inter', 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  max-width: 800px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 28px;
-  line-height: 1.9;
-  font-size: 20px;
+  padding: 32px;
+  line-height: 2;
+  font-size: 22px;
   color: #eee;
   position: relative;
 }
@@ -43,14 +43,14 @@ header {
   border-radius: 12px;
 }
 [data-theme="dark"] header { border-bottom-color: #444; }
-header h1 { margin: 0; font-size: 48px; font-weight: 600; }
+header h1 { margin: 0; font-size: 56px; font-weight: 600; }
 header h1 a { color: #333; text-decoration: none; }
 [data-theme="dark"] header h1 a { color: #eee; }
 nav { margin-top: 12px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
 nav a {
   color: #666;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   padding: 4px 12px;
   border-radius: 6px;
@@ -84,12 +84,12 @@ nav a:hover { background: rgba(128,128,128,0.12); color: #000; }
 .theme-switch span:hover { background: rgba(128,128,128,0.2); transform: rotate(15deg); }
 main {
   min-height: 60vh;
-  padding: 28px;
+  padding: 32px;
   border-radius: 12px;
-  font-size: 20px;
-  line-height: 1.9;
+  font-size: 22px;
+  line-height: 2;
 }
-main h2 { font-size: 36px; font-weight: 600; margin-top: 0; }
+main h2 { font-size: 40px; font-weight: 600; margin-top: 0; }
 footer {
   border-top: 1px solid #eee;
   padding-top: 18px;
