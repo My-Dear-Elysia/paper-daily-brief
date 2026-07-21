@@ -22,3 +22,14 @@ date: 2026-07-21
 我有一个观点：一个大学生，不能意识到应试教育的弊端，反而为其歌功颂德，在大学里延续着高中的习惯，疯狂内卷，却从不、甚至于逃避反省自己的这套观念是否正确，当缩头乌龟的医学生的话，那么恐怕 6 年后的事业前景也不言而喻了。
 
 我写这些，是为了记录此时此刻我的理念，如果有志同道合的人看见的话，也欢迎和我交流。
+
+---
+
+### 一些链接
+
+- [L.M.Sherlock](https://www.zhihu.com/people/L.M.Sherlock) — 知乎
+- [常之远](https://www.zhihu.com/people/chang-zhi-yuan-19/columns) — 知乎专栏
+- [SurviveSJTU](https://survivesjtu.gitbook.io/survivesjtumanual) — GitBook
+- [残梦中的车陷](https://www.zhihu.com/people/can-meng-zhong-de-che-xian) — 知乎
+- [Kirigaya](https://kirigaya.cn/) — 博客
+- [TuskedEvening0's Blog](https://tuskede0.top/2026/06/22/xatu-iot-students-survival-guide/) — 西安工大物联网生存指南
