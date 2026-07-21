@@ -8,6 +8,9 @@
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="武汉大学临床医学八年制，医学 AI。">
   <meta property="og:url" content="{{ .Permalink }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.ico?v=2">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -25,7 +28,8 @@
         <span id="theme-toggle" title="切换亮暗"></span>
       </span>
     </nav>
-  </header>
+    <div class="subtitle">医学 · AI · 科研</div>
+    </header>
   <main>
     <article>
       <h2>{{ .Title }}</h2>
@@ -33,7 +37,8 @@
     </article>
   </main>
   <footer>
-    <p>© {{ now.Year }} {{ .Site.Title }}</p>
+    <p>© {{ now.Year }} 李文韬</p>
+    <p>Powered by Hugo · Hosted on Cloudflare</p>
   </footer>
   <script src="/js/theme.js"></script>
 </body>
