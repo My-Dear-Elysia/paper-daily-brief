@@ -37,14 +37,22 @@ nav a:hover { color: #000; }
 [data-theme="dark"] nav a:hover { color: #fff; }
 .theme-switch {
   margin-left: auto;
-  font-size: 1em;
-  border-left: 1px solid #ccc;
-  padding-left: 10px;
+  font-size: 1.2em;
 }
 [data-theme="dark"] .theme-switch { border-left-color: #555; }
-.theme-switch a { margin-left: 5px; cursor: pointer; text-decoration: none; opacity: 0.5; }
-.theme-switch a.active { opacity: 1; }
-.theme-switch a:hover { opacity: 0.8; }
+.theme-switch a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  background: rgba(255,255,255,0.3);
+  transition: background 0.2s;
+}
+.theme-switch a:hover { background: rgba(255,255,255,0.6); }
 main {
   min-height: 60vh;
   padding: 20px;
