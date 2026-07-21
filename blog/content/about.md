@@ -15,4 +15,4 @@ date: 2026-07-21
 
 - Email: wentaoli326@gmail.com
 - GitHub: [WentaoLi-Med](https://github.com/WentaoLi-Med)
-- 知乎：[苏菲好可爱](https://www.zhihu.com/people/sophie_is_so_cute)
+- 知乎：[alchemist](https://www.zhihu.com/people/sophie_is_so_cute)
