@@ -7,26 +7,48 @@ body {
   background: url('/images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+[data-theme="light"] header,
+[data-theme="light"] main,
+[data-theme="light"] footer {
+  background: rgba(255,255,255,0.85);
+  color: #333;
+}
+[data-theme="dark"] header,
+[data-theme="dark"] main,
+[data-theme="dark"] footer {
+  background: rgba(0,0,0,0.75);
+  color: #eee;
+}
 header {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  background: rgba(255,255,255,0.85);
   padding: 15px 20px;
   border-radius: 8px;
-  color: #333;
 }
+[data-theme="dark"] header { border-bottom-color: #444; }
 header h1 { margin: 0; font-size: 1.5em; }
 header h1 a { color: #333; text-decoration: none; }
-nav { margin-top: 8px; }
+[data-theme="dark"] header h1 a { color: #eee; }
+nav { margin-top: 8px; display: flex; align-items: center; flex-wrap: wrap; }
 nav a { margin-right: 15px; color: #666; text-decoration: none; font-size: 0.9em; }
+[data-theme="dark"] nav a { color: #aaa; }
 nav a:hover { color: #000; }
+[data-theme="dark"] nav a:hover { color: #fff; }
+.theme-switch {
+  margin-left: auto;
+  font-size: 0.85em;
+}
+.theme-switch a { margin-left: 8px; cursor: pointer; color: #666; text-decoration: none; }
+[data-theme="dark"] .theme-switch a { color: #aaa; }
+.theme-switch a.active { font-weight: bold; color: #000; }
+[data-theme="dark"] .theme-switch a.active { color: #fff; }
+.theme-switch a:hover { color: #000; }
+[data-theme="dark"] .theme-switch a:hover { color: #fff; }
 main {
   min-height: 60vh;
-  background: rgba(255,255,255,0.85);
   padding: 20px;
   border-radius: 8px;
-  color: #333;
 }
 footer {
   border-top: 1px solid #eee;
@@ -35,24 +57,13 @@ footer {
   font-size: 0.85em;
   color: #999;
   text-align: center;
-  background: rgba(255,255,255,0.85);
   padding: 15px 20px;
   border-radius: 8px;
 }
+[data-theme="dark"] footer { border-top-color: #444; color: #aaa; }
 article h2 { margin-top: 0; }
 time { color: #999; font-size: 0.85em; }
 a { color: #2563eb; }
+[data-theme="dark"] a { color: #6ea8fe; }
 ul { padding-left: 20px; }
 li { margin-bottom: 8px; }
-
-@media (prefers-color-scheme: dark) {
-  body { color: #eee; }
-  header { background: rgba(0,0,0,0.75); color: #eee; border-bottom-color: #444; }
-  header h1 a { color: #eee; }
-  nav a { color: #aaa; }
-  nav a:hover { color: #fff; }
-  main { background: rgba(0,0,0,0.75); color: #eee; }
-  footer { background: rgba(0,0,0,0.75); color: #aaa; border-top-color: #444; }
-  a { color: #6ea8fe; }
-  time { color: #777; }
-}
