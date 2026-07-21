@@ -7,15 +7,12 @@ date: 2026-07-21
 
 李文韬（Jerry Li），武汉大学临床医学八年制在读，医学 AI 方向。
 
-## 方向
+## 兴趣
 
-医学 AI 工作流自动化——构建信息检索、知识组织和任务管理系统。
+二次元、Galgame、炼金工房系列。
 
 ## 联系方式
 
-- GitHub: [WentaoLi-Med](https://github.com/WentaoLi-Med)
 - Email: wentaoli326@gmail.com
-
-## 友链（建设中）
-
-- [Kirigaya](https://kirigaya.cn/)
+- GitHub: [WentaoLi-Med](https://github.com/WentaoLi-Med)
+- 知乎：待补充
