@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>首页 on Jerry Li</title>
-    <link>https://jerryli.cn/</link>
-    <description>Recent content in 首页 on Jerry Li</description>
+    <title>日报 on Jerry Li</title>
+    <link>https://jerryli.cn/reports/daily/</link>
+    <description>Recent content in 日报 on Jerry Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>关于</title>
-      <link>https://jerryli.cn/about/</link>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/about/</guid>
-      <description>临床医学 MD，医学 AI 方向。这个博客记录学习笔记和项目。</description>
-    </item>
-    
+    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/daily/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>每日医学AI论文简报 v0.2</title>
       <link>https://jerryli.cn/reports/daily/daily_2026-07-21/</link>
@@ -77,66 +68,6 @@
 核心发现: AI可增强诊断、优化工作流并提升运营效率，但隐私、临床可用性和兼容性仍是主要挑战；文中示例展示了LLM报告重构、胰腺癌恶病质早期检测、隐私保护协作训练以及PHI安全移除等进展。
 相关度（医学AI研究者）: 高，直接涉及肿瘤委员会决策支持、临床试验匹配、报告质量保证及成像复杂性指数等新兴方向，为落地实践提供可参考框架。
 一句话: 该综述梳理了放射学临床AI的基础与趋势，并通过四个具体应用案例（LLM报告生成、多模态癌症筛查、联邦学习、去标识化流程）展示了其转化潜力与现存挑战。 3. Foundation models for ophthalmic imaging. Surv Ophthalmol | 2026 Jul-Aug | PMID: 41619947 领域: 眼科影像基础模型</description>
-    </item>
-    
-    <item>
-      <title>医学AI 周报</title>
-      <link>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</link>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</guid>
-      <description>医学AI 周报 期间: 2026-07-13 ~ 2026-07-19 生成时间: 2026-07-20 08:03 论文总数: 60 | 行业新闻: 35 条
- 一、本期概览 📄 论文动态 本期论文以AI/LLM在医疗场景的应用为主（9篇），涵盖ICU死亡率预测、内镜诊断、超声报告生成、病历术语识别、谵妄筛查等，同时涉及心力衰竭药物（AC01）、RAAS系统靶向、白血病药物敏感性及免疫分析技术等基础与临床转化研究。
-🏭 行业动态 行业动态聚焦FDA对AI医疗设备的监管新规，包括简化审批流程、风险-获益报告要求及AHA反馈意见；同时多份市场报告显示AI医疗市场高速增长（CAGR约37%-38%），预计2035年规模超700亿美元。
-📊 高频期刊 TOP10    期刊 IF 篇数     J Med Internet Res 5.8 4   NPJ Digit Med 12.4 2   J Ethnopharmacol 4.8 2   JMIR Med Inform 3.1 2   Comput Biol Med 6.5 1   Value Health 4.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 周报</title>
-      <link>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</guid>
-      <description>医学AI 周报 期间: 2026-07-06 ~ 2026-07-12 生成时间: 2026-07-19 19:54 论文总数: 60 | 行业新闻: 35 条
- 一、本期概览 📄 论文动态 本期论文涵盖AI自主科研、医学影像分析、肿瘤精准医学、临床决策支持、基础机制及新材料等方向，其中多篇顶级期刊论文展示了AI在复杂医学任务中的潜力，同时非AI基础研究如信号通路和药物临床试验也取得重要进展。
-🏭 行业动态 FDA已批准超1000项临床AI应用，以放射学为主，且审批流程简化趋势明显；全球AI医疗市场规模预计以超37%的复合年增长率增长，行业热度持续攀升。
-📊 高频期刊 TOP10    期刊 IF 篇数     BMC Med Inform Decis Mak 3.5 2   Cell Host Microbe 45.5 2   Eur Heart J 39.3 2   Int Dent J 2.5 2   Int J Med Inform 5.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 季报（2026Q2）</title>
-      <link>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</guid>
-      <description>医学AI 季报（2026Q2） 期间: 2026-04-01 ~ 2026-06-30 生成时间: 2026-07-20 17:20 论文总数: 25 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期15篇论文聚焦AI在医疗领域的深度应用，尤其是大语言模型（LLM）在临床决策支持、心理治疗、药物分析中的创新，以及RAG技术优化。同时涵盖AI驱动的早期癌症检测（液体活检、影像组学）、药物抵抗机制、CAR T靶点识别等。基础研究方面包括儿科肿瘤结构变异和免疫球蛋白编辑机制。整体呈现从算法验证向临床落地转化的趋势。
-🏭 行业动态 行业动态围绕FDA对AI医疗器械的监管政策调整，包括简化审批流程、建立分类体系（1016项授权设备分析）、强调风险收益报告。同时市场报告显示AI医疗健康市场以37.66% CAGR持续增长，多家机构推动AI作为临床共治模式（co-clinician），Google DeepMind等头部力量加速布局。监管与商业化双轮驱动行业进入快车道。
-📊 高频期刊 TOP10    期刊 IF 篇数     Nature 50.5 3   J Med Internet Res 5.8 2   Cell 45.5 2   Cancer Cell 31.7 2   J Am Med Inform Assoc 6.4 2   Eur J Cancer 7.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 年报（2025）</title>
-      <link>https://jerryli.cn/reports/yearly/yearly_2025/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/yearly/yearly_2025/</guid>
-      <description>医学AI 年报（2025） 期间: 2025-01-01 ~ 2025-12-31 生成时间: 2026-07-20 15:14 论文总数: 30 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期15篇论文聚焦大语言模型（LLM）在医疗领域的多维度应用，包括药物分析、临床决策支持、个性化健康教练、放射学、健康素养教育及心理治疗对比等，同时涵盖AI监管与伦理态度研究，显示LLM正从辅助工具向核心临床系统演进。
-🏭 行业动态 行业新闻凸显AI医疗设备监管动态（FDA指南、AHA意见）、市场增长预期，以及Google DeepMind推出AI Co-Clinician计划，强调人机协作新模式。法规完善与商业化加速并存，产业进入规范化落地阶段。
-📊 高频期刊 TOP10    期刊 IF 篇数     Nat Med 58.7 5   J Med Internet Res 5.8 3   Cell Rep Med 45.5 2   Int J Med Inform 5.5 2   Radiology 12.1 2   NPJ Digit Med 12.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 月报</title>
-      <link>https://jerryli.cn/reports/monthly/monthly_2026-06/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/monthly/monthly_2026-06/</guid>
-      <description>医学AI 月报 期间: 2026-06-01 ~ 2026-06-30 生成时间: 2026-07-20 17:36 论文总数: 23 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期论文以AI在医疗中的前沿应用为主，特别是大语言模型（LLM）的临床决策支持、检索增强生成（RAG）、自主AI代理、隐私保护及数据互操作性等方向，同时涵盖微生物组、眼科、急诊分诊、术后管理等具体场景，表明AI正从概念验证向临床落地快速推进。
-🏭 行业动态 行业动态高度聚焦于AI医疗设备的监管与审批，包括FDA简化AI/ML设备审批流程、AHA致FDA信函、以及市场增长预测。同时Google DeepMind等巨头持续推动临床AI新模式，显示监管与技术创新双轮驱动行业成熟。
-📊 高频期刊 TOP10    期刊 IF 篇数     NPJ Digit Med 12.4 2   Nat Med 58.7 2   J Med Internet Res 5.8 2   Med 8.6 2   Digit Health 23.8 2   Gut 19.</description>
     </item>
     
   </channel>
