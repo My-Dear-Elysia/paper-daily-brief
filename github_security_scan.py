@@ -3,7 +3,7 @@
 import os, sys, json, re, subprocess, urllib.request, urllib.parse, base64, tempfile, shutil
 
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-USER = "My-Dear-Elysia"
+USER = "WentaoLi-Med"
 SCAN_PATTERNS = [
     ("API密钥", r'(?i)(sk-[A-Za-z0-9]{20,}|tvly-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{36,}|gho_[A-Za-z0-9]{36,}|xox[bpras]-[A-Za-z0-9-]+|AIza[A-Za-z0-9_-]{35})'),
     ("本地路径", r'(/root/|/home/|D:\\|C:\\|/Users/)'),

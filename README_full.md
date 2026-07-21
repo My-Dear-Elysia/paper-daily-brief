@@ -47,7 +47,7 @@ Markdown report (daily_YYYY-MM-DD.md)
 
 ```bash
 # 1. Clone
-git clone git@github.com:My-Dear-Elysia/paper-daily-brief.git
+git clone git@github.com:WentaoLi-Med/paper-daily-brief.git
 cd paper-daily-brief
 
 # 2. Install dependencies

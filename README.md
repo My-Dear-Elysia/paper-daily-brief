@@ -27,7 +27,7 @@ Built by a medical student (MD) for medical AI workflow automation.
 ## Quick Start
 
 ```bash
-git clone git@github.com:My-Dear-Elysia/paper-daily-brief.git
+git clone git@github.com:WentaoLi-Med/paper-daily-brief.git
 cd paper-daily-brief
 
 # Optional: use uv for faster dependency management
