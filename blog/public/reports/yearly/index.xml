@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>年报 on 李文韬</title>
-    <link>https://jerryli.cn/reports/yearly/</link>
-    <description>Recent content in 年报 on 李文韬</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/yearly/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>医学AI 年报（2025）</title>
-      <link>https://jerryli.cn/reports/yearly/yearly_2025/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/yearly/yearly_2025/</guid>
-      <description>医学AI 年报（2025） 期间: 2025-01-01 ~ 2025-12-31 生成时间: 2026-07-20 15:14 论文总数: 30 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期15篇论文聚焦大语言模型（LLM）在医疗领域的多维度应用，包括药物分析、临床决策支持、个性化健康教练、放射学、健康素养教育及心理治疗对比等，同时涵盖AI监管与伦理态度研究，显示LLM正从辅助工具向核心临床系统演进。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>年报 on 苏菲的工房</title><link>https://jerryli.cn/reports/yearly/</link><description>Recent content in 年报 on 苏菲的工房</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/yearly/index.xml" rel="self" type="application/rss+xml"/><item><title>医学AI 年报（2025）</title><link>https://jerryli.cn/reports/yearly/yearly_2025/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/yearly/yearly_2025/</guid><description>医学AI 年报（2025） 期间: 2025-01-01 ~ 2025-12-31 生成时间: 2026-07-20 15:14 论文总数: 30 | 行业新闻: 33 条
+一、本期概览 📄 论文动态 本期15篇论文聚焦大语言模型（LLM）在医疗领域的多维度应用，包括药物分析、临床决策支持、个性化健康教练、放射学、健康素养教育及心理治疗对比等，同时涵盖AI监管与伦理态度研究，显示LLM正从辅助工具向核心临床系统演进。
 🏭 行业动态 行业新闻凸显AI医疗设备监管动态（FDA指南、AHA意见）、市场增长预期，以及Google DeepMind推出AI Co-Clinician计划，强调人机协作新模式。法规完善与商业化加速并存，产业进入规范化落地阶段。
-📊 高频期刊 TOP10    期刊 IF 篇数     Nat Med 58.7 5   J Med Internet Res 5.8 3   Cell Rep Med 45.5 2   Int J Med Inform 5.5 2   Radiology 12.1 2   NPJ Digit Med 12.</description>
-    </item>
-    
-  </channel>
-</rss>
+📊 高频期刊 TOP10 期刊 IF 篇数 Nat Med 58.7 5 J Med Internet Res 5.8 3 Cell Rep Med 45.5 2 Int J Med Inform 5.5 2 Radiology 12.1 2 NPJ Digit Med 12.</description></item></channel></rss>

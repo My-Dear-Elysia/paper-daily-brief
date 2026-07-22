@@ -1,30 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>最近更新 on 李文韬</title>
-    <link>https://jerryli.cn/</link>
-    <description>Recent content in 最近更新 on 李文韬</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>关于</title>
-      <link>https://jerryli.cn/about/</link>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/about/</guid>
-      <description>简介 李文韬（Jerry Li），武汉大学临床医学八年制在读，医学 AI 方向。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>最近更新 on 苏菲的工房</title><link>https://jerryli.cn/</link><description>Recent content in 最近更新 on 苏菲的工房</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent 辅助期末复习经验</title><link>https://jerryli.cn/posts/agent-review/</link><pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/posts/agent-review/</guid><description>先说明几点： 第一，以下内容均为本人个人经验和感受，不一定对你适用；第二，本人期末几乎完全靠这个复习，也勉强算得上是有了实战经验；第三，以下涉及的内容均为示例，读者也可根据自己情况进行修改和调整。
+本篇为第一篇，介绍我是如何简单配置模型和 Agent 的。
+首先，我们需要了解什么是 LLM（维基百科）、Agent（OpenAI，ChatGPT/Codex 的公司）/ Agent（Anthropic）、API（MDN）/ API（OpenAI）、Workflow（维基百科）、OCR（维基百科），我在这里引用一些文档供大家学习。
+我们也可以看看锦恢大佬的教程（暂未完结）：
+https://kirigaya.cn/blog/article?seq=351 https://kirigaya.cn/blog/article?seq=374 https://kirigaya.cn/blog/article?seq=376 https://kirigaya.cn/blog/article?seq=382 这个更适合新人而非开发者。
+我们实际上并不需要完全理解里面的原理，毕竟我们是医学生，不是程序员。所以接下来我会用自己的案例来演示如何构建一个属于自己的 Agent。
+第一步：获取 API Key 首先，我们需要拥有一个 LLM 公司的账号，注册之后查看他们关于 API 调用的官方文件。比如说：
+阿里云（主要是 Qwen LLM / Qwen OCR）：官方文档 DeepSeek：API 文档 OpenAI（ChatGPT）：开发者文档 小米（mimo）：快速开始 智谱（GLM）：快速开始 当然，还有其他的 LLM 和提供商，以及自己部署模型后为你提供服务的厂商（比如腾讯元宝），但这就不在我们的讨论范围了。
+在这里我要补充很重要的一点：DeepSeek 这种 LLM 是纯文字模型（至少在我写的时候是这样，网页版有识图模式，但 API 暂时还没有。平时我们上传图片让 DeepSeek 解答的时候，本质上是 AI 提取文字之后再解答，因此也会出现未识别到文字的提示）。豆包/Kimi/mimo 等不少模型都支持多模态（图像、文字、视频、音频），所以如果你想要分析和制作图片的话慎用 DeepSeek，我个人这方面的工作是让 Qwen-vl-max 去做的。
+粗略看过一遍后，我们接下来按照上面的方法，创建一个 API key。
+注意： 请务必在创建之后以文档（txt）的方式将你的 key 保存下来，你将无法再次查看这串字符。GitHub（Git Official）token 同理。确定你已经保存且进行了合适的命名（比如 DeepSeek API key）后，再继续下一步。</description></item><item><title>关于</title><link>https://jerryli.cn/about/</link><pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/about/</guid><description>简介 李文韬（Jerry Li），武汉大学临床医学八年制在读，医学 AI 方向。
 兴趣 二次元、Galgame、炼金工房系列。
-联系方式  Email: wentaoli326@gmail.com GitHub: WentaoLi-Med 知乎：苏菲好可爱  </description>
-    </item>
-    
-    <item>
-      <title>博客诞生记</title>
-      <link>https://jerryli.cn/posts/first-post/</link>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/posts/first-post/</guid>
-      <description>现在是北京时间 2026/7/21 22:03，我现在在宿舍，纪念我的博客在今天正式诞生。
+联系方式 Email: wentaoli326@gmail.com GitHub: WentaoLi-Med 知乎：alchemist</description></item><item><title>启程宣言</title><link>https://jerryli.cn/posts/first-post/</link><pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/posts/first-post/</guid><description>现在是北京时间 2026/7/21 22:03，我现在在宿舍，纪念我的博客在今天正式诞生。
 3 年前 CNBO 失利的那个晚上，我无法想象到，三年之后，我会坐在寝室，做着和之前的大佬类似的事情。从以前就想过，要在知乎上写回答，传播知识，但直到今天都没有行动。
 全球健康概论是 5/24 考完的，5/27 我正式决定要试着使用 AI/API/Agent，这简直就像是打开了潘多拉魔盒一样。到这个时间点，我发现我已经难以离开 AI 了，它给我的生活、学习带来了巨大的影响。我从以前只在新闻上看到的文心一言，到现在自己动手部署 Agent，是一个巨大的飞跃。
 刚上大学那段时间，我感受到了巨大的落差。实际上的大学生活远没有我原本想象的多姿多彩。也许是因为我是一个懒惰的人，也许是因为我与众不同，或者说在很多方面格格不入。总之，虽然也有不少喜悦，但我的前两年基本上是相当压抑的。我没有什么和其他人一样的爱好——不喜欢短视频，不喜欢看那些网文，不喜欢竞技，不喜欢刷分。我当时真的抱着&amp;quot;上大学就是为了在学校中享受生活学习知识&amp;quot;的想法，但很快这就破灭了。
@@ -33,131 +19,47 @@
 所以，我创建了这个博客，希望记录我的成长，也希望未来的某一天有人能看见这些，希望和我有着同样理想的人能看见，我们共同建设这个尚未被人看见的可能。
 我不觉得&amp;quot;21 世纪是生命科学的世纪&amp;quot;。尽管我曾经确实投入了两年的时间参加竞赛并最终获得了银牌。AI 的发展日新月异，如果不能打上这辆便车，反而沉浸于大学和医院这个保守、封闭的系统，甚至于自我麻痹，说着&amp;quot;环境确实不好，所以我们才要卷绩点和综测，卷论文找导师，争取将来拿帽子，升职加薪&amp;quot;的话，6 年的时间足以让这种人破碎幻想，甚至于怨天尤人。
 我有一个观点：一个大学生，不能意识到应试教育的弊端，反而为其歌功颂德，在大学里延续着高中的习惯，疯狂内卷，却从不、甚至于逃避反省自己的这套观念是否正确，当缩头乌龟的医学生的话，那么恐怕 6 年后的事业前景也不言而喻了。
-我写这些，是为了记录此时此刻我的理念，如果有志同道合的人看见的话，也欢迎和我交流。</description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.2</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-21/</link>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-21/</guid>
-      <description>每日医学AI论文简报 v0.2 日期: 2026-07-21 07:01 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
- 💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
- 1. Reliability of Large Language Model Generated Clinical Reasoning in Assisted Reproductive Technology: Blinded Comparative Evaluation Study. J Med Internet Res (IF: 5.8) | 2026 Jan 8 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
+我写这些，是为了记录此时此刻我的理念，如果有志同道合的人看见的话，也欢迎和我交流。
+一些链接 L.M.Sherlock 常之远 SurviveSJTU 残梦中的车陷 Kirigaya TuskedEvening0&amp;rsquo;s Blog</description></item><item><title>每日医学AI论文简报 v0.2</title><link>https://jerryli.cn/reports/daily/daily_2026-07-21/</link><pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-21/</guid><description>每日医学AI论文简报 v0.2 日期: 2026-07-21 07:01 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
+💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
+1. Reliability of Large Language Model Generated Clinical Reasoning in Assisted Reproductive Technology: Blinded Comparative Evaluation Study. J Med Internet Res (IF: 5.8) | 2026 Jan 8 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
 领域: 辅助生殖技术（ART）中的临床推理与可解释医学人工智能
 方法: 盲法比较评估研究。在临床试验中心，由资深生殖医学专家对三种提示策略（零样本、随机少样本、选择性少样本）生成的大语言模型思维链（CoT）进行打分，并比较专家评分与GPT-4o模型自动评估的结果。
 核心发现: 选择性少样本策略（基于“金标准深度”与“代表性多样性”双重原则）在逻辑清晰度、关键信息使用和临床准确性上显著优于其他策略（P&amp;lt;.001）；随机少样本策略与零样本基线无显著差异，表明低质量示例无效；AI评估者（GPT-4o）无法识别这些关键差异，凸显人类专家在评估生成临床数据中的不可替代性。
 相关度（医学AI研究者）: 极高——直接回答了LLM生成临床思维链的可靠性问题，揭示了提示设计策略的关键性，并指出了当前AI自动评估的局限性，对构建可信、可解释的医学AI系统具有重要指导价值。
-一句话: 在辅助生殖技术中，采用“选择性少样本”（基于高质量、多样化示例）提示策略能显著提升LLM生成临床思维链的可靠性，而随机低质量示例或零样本策略效果不佳，且现有AI评估无法捕捉这种差异。 </description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.2</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-20/</link>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-20/</guid>
-      <description>每日医学AI论文简报 v0.2 日期: 2026-07-20 07:03 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
- 💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
- 1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
+一句话: 在辅助生殖技术中，采用“选择性少样本”（基于高质量、多样化示例）提示策略能显著提升LLM生成临床思维链的可靠性，而随机低质量示例或零样本策略效果不佳，且现有AI评估无法捕捉这种差异。</description></item><item><title>每日医学AI论文简报 v0.2</title><link>https://jerryli.cn/reports/daily/daily_2026-07-20/</link><pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-20/</guid><description>每日医学AI论文简报 v0.2 日期: 2026-07-20 07:03 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
+💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
+1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
 领域: 精准肿瘤学、医学人工智能、大语言模型（LLM）
 方法: 开发了一个基于检索增强生成（RAG）的大语言模型工作流，以分子肿瘤学知识库（Molecular Oncology Almanac, MOAlmanac）作为上下文来源。在合成查询和来自执业肿瘤学家的真实世界查询上，对比了RAG-LLM与纯LLM方法的治疗推荐准确性，并探索了多种提示与检索策略以优化性能。
 核心发现: RAG-LLM在合成查询上达到95%的准确率，在真实世界查询上达到93%的准确率，显著优于仅使用LLM的方法。结果表明，结合动态更新的专业知识库能有效提升LLM在精准肿瘤学治疗推荐中的准确性，为临床部署提供了可行框架。
 相关度（医学AI研究者）: 高。研究直接针对临床决策支持中的LLM知识滞后与幻觉问题，提出了可复现的RAG解决方案，并验证了其在真实场景中的有效性，对推动医学AI落地具有重要参考价值。
-一句话: 通过检索增强生成（RAG）为LLM注入分子肿瘤学专业知识，该框架在精准肿瘤学治疗推荐中达到93%以上准确率，为临床LLM部署提供了可靠路径。 2. General-purpose large language models outperform specialized clinical AI tools on medical benchmarks.</description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.2</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-19/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-19/</guid>
-      <description>每日医学AI论文简报 v0.2 日期: 2026-07-19 18:36 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
- 1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed | DOI 📄全文 分析来源: PMC全文
+一句话: 通过检索增强生成（RAG）为LLM注入分子肿瘤学专业知识，该框架在精准肿瘤学治疗推荐中达到93%以上准确率，为临床LLM部署提供了可靠路径。 2. General-purpose large language models outperform specialized clinical AI tools on medical benchmarks.</description></item><item><title>每日医学AI论文简报 v0.2</title><link>https://jerryli.cn/reports/daily/daily_2026-07-19/</link><pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-19/</guid><description>每日医学AI论文简报 v0.2 日期: 2026-07-19 18:36 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
+1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed | DOI 📄全文 分析来源: PMC全文
 领域: 精准肿瘤学、医学人工智能、大型语言模型（LLM）、检索增强生成（RAG）
 方法: 开发了一种基于检索增强生成（RAG）的LLM工作流，利用Molecular Oncology Almanac（MOAlmanac）作为外部知识库，与仅使用LLM的方法进行对比。在合成查询和来自执业肿瘤学家的真实世界查询上评估性能，并探索了多种提示工程和检索策略以优化推荐准确性。
 核心发现: RAG-LLM在合成查询中达到95%准确率，在真实世界查询中达到93%准确率，显著优于仅依赖通用知识的LLM方法。该框架能够动态整合最新的FDA批准信息和分子标志物-治疗关系，有效弥补了LLM知识滞后问题，为精准肿瘤学临床决策提供了可靠支持。
 相关度（医学AI研究者）: 高。该研究直接解决了LLM在临床应用中的知识更新瓶颈，提供了可部署的上下文增强框架，对推动AI辅助肿瘤治疗决策具有重要参考价值。
-一句话: 本研究通过检索增强生成（RAG）框架将MOAlmanac知识库与LLM结合，在真实世界肿瘤学查询中达到93%准确率，显著优于纯LLM方法，为精准肿瘤学治疗推荐提供了准确、动态更新的AI解决方案。 2. Artificial intelligence in nuclear medicine. Br J Radiol (IF: 2.0) | 2026 Jul 1 | PubMed | DOI 分析来源: 摘要</description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.1</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-18/</link>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-18/</guid>
-      <description>每日医学AI论文简报 v0.1 日期: 2026-07-18 22:57 来源: PubMed | 分析: DeepSeek-v4-flash
- 1. HR3/RORα-mediated cholesterol sensing regulates TOR signaling. Nat Commun | 2026 Mar 30 | PMID: 41912517 领域: 细胞信号转导、胆固醇感知、TOR信号通路、核受体生物学
+一句话: 本研究通过检索增强生成（RAG）框架将MOAlmanac知识库与LLM结合，在真实世界肿瘤学查询中达到93%准确率，显著优于纯LLM方法，为精准肿瘤学治疗推荐提供了准确、动态更新的AI解决方案。 2. Artificial intelligence in nuclear medicine. Br J Radiol (IF: 2.0) | 2026 Jul 1 | PubMed | DOI 分析来源: 摘要</description></item><item><title>每日医学AI论文简报 v0.1</title><link>https://jerryli.cn/reports/daily/daily_2026-07-18/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-18/</guid><description>每日医学AI论文简报 v0.1 日期: 2026-07-18 22:57 来源: PubMed | 分析: DeepSeek-v4-flash
+1. HR3/RORα-mediated cholesterol sensing regulates TOR signaling. Nat Commun | 2026 Mar 30 | PMID: 41912517 领域: 细胞信号转导、胆固醇感知、TOR信号通路、核受体生物学
 方法: 果蝇遗传学、人类细胞系实验、胆固醇结合与TOR激活的生化分析、非基因组与基因组调控机制探究
 核心发现: 核受体HR3（哺乳动物RORα同源物）作为胆固醇传感器，通过 2. Clinical AI in Radiology: Foundations, Trends, Applications, and Emerging Directions. Cancers (Basel) | 2026 Mar 13 | PMID: 41899545 领域: 临床放射学人工智能
 方法: 综述当前趋势与代表性应用，包括大型语言模型（LLMs）本地部署、多模态AI框架、联邦学习（FL）基础设施、以及不确定性感知的去标识化流程。
 核心发现: AI可增强诊断、优化工作流并提升运营效率，但隐私、临床可用性和兼容性仍是主要挑战；文中示例展示了LLM报告重构、胰腺癌恶病质早期检测、隐私保护协作训练以及PHI安全移除等进展。
 相关度（医学AI研究者）: 高，直接涉及肿瘤委员会决策支持、临床试验匹配、报告质量保证及成像复杂性指数等新兴方向，为落地实践提供可参考框架。
-一句话: 该综述梳理了放射学临床AI的基础与趋势，并通过四个具体应用案例（LLM报告生成、多模态癌症筛查、联邦学习、去标识化流程）展示了其转化潜力与现存挑战。 3. Foundation models for ophthalmic imaging. Surv Ophthalmol | 2026 Jul-Aug | PMID: 41619947 领域: 眼科影像基础模型</description>
-    </item>
-    
-    <item>
-      <title>医学AI 周报</title>
-      <link>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</link>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</guid>
-      <description>医学AI 周报 期间: 2026-07-13 ~ 2026-07-19 生成时间: 2026-07-20 08:03 论文总数: 60 | 行业新闻: 35 条
- 一、本期概览 📄 论文动态 本期论文以AI/LLM在医疗场景的应用为主（9篇），涵盖ICU死亡率预测、内镜诊断、超声报告生成、病历术语识别、谵妄筛查等，同时涉及心力衰竭药物（AC01）、RAAS系统靶向、白血病药物敏感性及免疫分析技术等基础与临床转化研究。
+一句话: 该综述梳理了放射学临床AI的基础与趋势，并通过四个具体应用案例（LLM报告生成、多模态癌症筛查、联邦学习、去标识化流程）展示了其转化潜力与现存挑战。 3. Foundation models for ophthalmic imaging. Surv Ophthalmol | 2026 Jul-Aug | PMID: 41619947 领域: 眼科影像基础模型</description></item><item><title>医学AI 周报</title><link>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</link><pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</guid><description>医学AI 周报 期间: 2026-07-13 ~ 2026-07-19 生成时间: 2026-07-20 08:03 论文总数: 60 | 行业新闻: 35 条
+一、本期概览 📄 论文动态 本期论文以AI/LLM在医疗场景的应用为主（9篇），涵盖ICU死亡率预测、内镜诊断、超声报告生成、病历术语识别、谵妄筛查等，同时涉及心力衰竭药物（AC01）、RAAS系统靶向、白血病药物敏感性及免疫分析技术等基础与临床转化研究。
 🏭 行业动态 行业动态聚焦FDA对AI医疗设备的监管新规，包括简化审批流程、风险-获益报告要求及AHA反馈意见；同时多份市场报告显示AI医疗市场高速增长（CAGR约37%-38%），预计2035年规模超700亿美元。
-📊 高频期刊 TOP10    期刊 IF 篇数     J Med Internet Res 5.8 4   NPJ Digit Med 12.4 2   J Ethnopharmacol 4.8 2   JMIR Med Inform 3.1 2   Comput Biol Med 6.5 1   Value Health 4.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 周报</title>
-      <link>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</guid>
-      <description>医学AI 周报 期间: 2026-07-06 ~ 2026-07-12 生成时间: 2026-07-19 19:54 论文总数: 60 | 行业新闻: 35 条
- 一、本期概览 📄 论文动态 本期论文涵盖AI自主科研、医学影像分析、肿瘤精准医学、临床决策支持、基础机制及新材料等方向，其中多篇顶级期刊论文展示了AI在复杂医学任务中的潜力，同时非AI基础研究如信号通路和药物临床试验也取得重要进展。
+📊 高频期刊 TOP10 期刊 IF 篇数 J Med Internet Res 5.8 4 NPJ Digit Med 12.4 2 J Ethnopharmacol 4.8 2 JMIR Med Inform 3.1 2 Comput Biol Med 6.5 1 Value Health 4.</description></item><item><title>医学AI 周报</title><link>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</guid><description>医学AI 周报 期间: 2026-07-06 ~ 2026-07-12 生成时间: 2026-07-19 19:54 论文总数: 60 | 行业新闻: 35 条
+一、本期概览 📄 论文动态 本期论文涵盖AI自主科研、医学影像分析、肿瘤精准医学、临床决策支持、基础机制及新材料等方向，其中多篇顶级期刊论文展示了AI在复杂医学任务中的潜力，同时非AI基础研究如信号通路和药物临床试验也取得重要进展。
 🏭 行业动态 FDA已批准超1000项临床AI应用，以放射学为主，且审批流程简化趋势明显；全球AI医疗市场规模预计以超37%的复合年增长率增长，行业热度持续攀升。
-📊 高频期刊 TOP10    期刊 IF 篇数     BMC Med Inform Decis Mak 3.5 2   Cell Host Microbe 45.5 2   Eur Heart J 39.3 2   Int Dent J 2.5 2   Int J Med Inform 5.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 季报（2026Q2）</title>
-      <link>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</guid>
-      <description>医学AI 季报（2026Q2） 期间: 2026-04-01 ~ 2026-06-30 生成时间: 2026-07-20 17:20 论文总数: 25 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期15篇论文聚焦AI在医疗领域的深度应用，尤其是大语言模型（LLM）在临床决策支持、心理治疗、药物分析中的创新，以及RAG技术优化。同时涵盖AI驱动的早期癌症检测（液体活检、影像组学）、药物抵抗机制、CAR T靶点识别等。基础研究方面包括儿科肿瘤结构变异和免疫球蛋白编辑机制。整体呈现从算法验证向临床落地转化的趋势。
+📊 高频期刊 TOP10 期刊 IF 篇数 BMC Med Inform Decis Mak 3.5 2 Cell Host Microbe 45.5 2 Eur Heart J 39.3 2 Int Dent J 2.5 2 Int J Med Inform 5.</description></item><item><title>医学AI 季报（2026Q2）</title><link>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</guid><description>医学AI 季报（2026Q2） 期间: 2026-04-01 ~ 2026-06-30 生成时间: 2026-07-20 17:20 论文总数: 25 | 行业新闻: 33 条
+一、本期概览 📄 论文动态 本期15篇论文聚焦AI在医疗领域的深度应用，尤其是大语言模型（LLM）在临床决策支持、心理治疗、药物分析中的创新，以及RAG技术优化。同时涵盖AI驱动的早期癌症检测（液体活检、影像组学）、药物抵抗机制、CAR T靶点识别等。基础研究方面包括儿科肿瘤结构变异和免疫球蛋白编辑机制。整体呈现从算法验证向临床落地转化的趋势。
 🏭 行业动态 行业动态围绕FDA对AI医疗器械的监管政策调整，包括简化审批流程、建立分类体系（1016项授权设备分析）、强调风险收益报告。同时市场报告显示AI医疗健康市场以37.66% CAGR持续增长，多家机构推动AI作为临床共治模式（co-clinician），Google DeepMind等头部力量加速布局。监管与商业化双轮驱动行业进入快车道。
-📊 高频期刊 TOP10    期刊 IF 篇数     Nature 50.5 3   J Med Internet Res 5.8 2   Cell 45.5 2   Cancer Cell 31.7 2   J Am Med Inform Assoc 6.4 2   Eur J Cancer 7.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 年报（2025）</title>
-      <link>https://jerryli.cn/reports/yearly/yearly_2025/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/yearly/yearly_2025/</guid>
-      <description>医学AI 年报（2025） 期间: 2025-01-01 ~ 2025-12-31 生成时间: 2026-07-20 15:14 论文总数: 30 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期15篇论文聚焦大语言模型（LLM）在医疗领域的多维度应用，包括药物分析、临床决策支持、个性化健康教练、放射学、健康素养教育及心理治疗对比等，同时涵盖AI监管与伦理态度研究，显示LLM正从辅助工具向核心临床系统演进。
+📊 高频期刊 TOP10 期刊 IF 篇数 Nature 50.5 3 J Med Internet Res 5.8 2 Cell 45.5 2 Cancer Cell 31.7 2 J Am Med Inform Assoc 6.4 2 Eur J Cancer 7.</description></item><item><title>医学AI 年报（2025）</title><link>https://jerryli.cn/reports/yearly/yearly_2025/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/yearly/yearly_2025/</guid><description>医学AI 年报（2025） 期间: 2025-01-01 ~ 2025-12-31 生成时间: 2026-07-20 15:14 论文总数: 30 | 行业新闻: 33 条
+一、本期概览 📄 论文动态 本期15篇论文聚焦大语言模型（LLM）在医疗领域的多维度应用，包括药物分析、临床决策支持、个性化健康教练、放射学、健康素养教育及心理治疗对比等，同时涵盖AI监管与伦理态度研究，显示LLM正从辅助工具向核心临床系统演进。
 🏭 行业动态 行业新闻凸显AI医疗设备监管动态（FDA指南、AHA意见）、市场增长预期，以及Google DeepMind推出AI Co-Clinician计划，强调人机协作新模式。法规完善与商业化加速并存，产业进入规范化落地阶段。
-📊 高频期刊 TOP10    期刊 IF 篇数     Nat Med 58.7 5   J Med Internet Res 5.8 3   Cell Rep Med 45.5 2   Int J Med Inform 5.5 2   Radiology 12.1 2   NPJ Digit Med 12.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 月报</title>
-      <link>https://jerryli.cn/reports/monthly/monthly_2026-06/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/monthly/monthly_2026-06/</guid>
-      <description>医学AI 月报 期间: 2026-06-01 ~ 2026-06-30 生成时间: 2026-07-20 17:36 论文总数: 23 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期论文以AI在医疗中的前沿应用为主，特别是大语言模型（LLM）的临床决策支持、检索增强生成（RAG）、自主AI代理、隐私保护及数据互操作性等方向，同时涵盖微生物组、眼科、急诊分诊、术后管理等具体场景，表明AI正从概念验证向临床落地快速推进。
+📊 高频期刊 TOP10 期刊 IF 篇数 Nat Med 58.7 5 J Med Internet Res 5.8 3 Cell Rep Med 45.5 2 Int J Med Inform 5.5 2 Radiology 12.1 2 NPJ Digit Med 12.</description></item><item><title>医学AI 月报</title><link>https://jerryli.cn/reports/monthly/monthly_2026-06/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/monthly/monthly_2026-06/</guid><description>医学AI 月报 期间: 2026-06-01 ~ 2026-06-30 生成时间: 2026-07-20 17:36 论文总数: 23 | 行业新闻: 33 条
+一、本期概览 📄 论文动态 本期论文以AI在医疗中的前沿应用为主，特别是大语言模型（LLM）的临床决策支持、检索增强生成（RAG）、自主AI代理、隐私保护及数据互操作性等方向，同时涵盖微生物组、眼科、急诊分诊、术后管理等具体场景，表明AI正从概念验证向临床落地快速推进。
 🏭 行业动态 行业动态高度聚焦于AI医疗设备的监管与审批，包括FDA简化AI/ML设备审批流程、AHA致FDA信函、以及市场增长预测。同时Google DeepMind等巨头持续推动临床AI新模式，显示监管与技术创新双轮驱动行业成熟。
-📊 高频期刊 TOP10    期刊 IF 篇数     NPJ Digit Med 12.4 2   Nat Med 58.7 2   J Med Internet Res 5.8 2   Med 8.6 2   Digit Health 23.8 2   Gut 19.</description>
-    </item>
-    
-  </channel>
-</rss>
+📊 高频期刊 TOP10 期刊 IF 篇数 NPJ Digit Med 12.4 2 Nat Med 58.7 2 J Med Internet Res 5.8 2 Med 8.6 2 Digit Health 23.8 2 Gut 19.</description></item></channel></rss>

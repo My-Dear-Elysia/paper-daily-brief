@@ -1,35 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>周报 on 李文韬</title>
-    <link>https://jerryli.cn/reports/weekly/</link>
-    <description>Recent content in 周报 on 李文韬</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/weekly/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>医学AI 周报</title>
-      <link>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</link>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</guid>
-      <description>医学AI 周报 期间: 2026-07-13 ~ 2026-07-19 生成时间: 2026-07-20 08:03 论文总数: 60 | 行业新闻: 35 条
- 一、本期概览 📄 论文动态 本期论文以AI/LLM在医疗场景的应用为主（9篇），涵盖ICU死亡率预测、内镜诊断、超声报告生成、病历术语识别、谵妄筛查等，同时涉及心力衰竭药物（AC01）、RAAS系统靶向、白血病药物敏感性及免疫分析技术等基础与临床转化研究。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>周报 on 苏菲的工房</title><link>https://jerryli.cn/reports/weekly/</link><description>Recent content in 周报 on 苏菲的工房</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/weekly/index.xml" rel="self" type="application/rss+xml"/><item><title>医学AI 周报</title><link>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</link><pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/weekly/weekly_2026-07-13/</guid><description>医学AI 周报 期间: 2026-07-13 ~ 2026-07-19 生成时间: 2026-07-20 08:03 论文总数: 60 | 行业新闻: 35 条
+一、本期概览 📄 论文动态 本期论文以AI/LLM在医疗场景的应用为主（9篇），涵盖ICU死亡率预测、内镜诊断、超声报告生成、病历术语识别、谵妄筛查等，同时涉及心力衰竭药物（AC01）、RAAS系统靶向、白血病药物敏感性及免疫分析技术等基础与临床转化研究。
 🏭 行业动态 行业动态聚焦FDA对AI医疗设备的监管新规，包括简化审批流程、风险-获益报告要求及AHA反馈意见；同时多份市场报告显示AI医疗市场高速增长（CAGR约37%-38%），预计2035年规模超700亿美元。
-📊 高频期刊 TOP10    期刊 IF 篇数     J Med Internet Res 5.8 4   NPJ Digit Med 12.4 2   J Ethnopharmacol 4.8 2   JMIR Med Inform 3.1 2   Comput Biol Med 6.5 1   Value Health 4.</description>
-    </item>
-    
-    <item>
-      <title>医学AI 周报</title>
-      <link>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</guid>
-      <description>医学AI 周报 期间: 2026-07-06 ~ 2026-07-12 生成时间: 2026-07-19 19:54 论文总数: 60 | 行业新闻: 35 条
- 一、本期概览 📄 论文动态 本期论文涵盖AI自主科研、医学影像分析、肿瘤精准医学、临床决策支持、基础机制及新材料等方向，其中多篇顶级期刊论文展示了AI在复杂医学任务中的潜力，同时非AI基础研究如信号通路和药物临床试验也取得重要进展。
+📊 高频期刊 TOP10 期刊 IF 篇数 J Med Internet Res 5.8 4 NPJ Digit Med 12.4 2 J Ethnopharmacol 4.8 2 JMIR Med Inform 3.1 2 Comput Biol Med 6.5 1 Value Health 4.</description></item><item><title>医学AI 周报</title><link>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/weekly/weekly_2026-07-06/</guid><description>医学AI 周报 期间: 2026-07-06 ~ 2026-07-12 生成时间: 2026-07-19 19:54 论文总数: 60 | 行业新闻: 35 条
+一、本期概览 📄 论文动态 本期论文涵盖AI自主科研、医学影像分析、肿瘤精准医学、临床决策支持、基础机制及新材料等方向，其中多篇顶级期刊论文展示了AI在复杂医学任务中的潜力，同时非AI基础研究如信号通路和药物临床试验也取得重要进展。
 🏭 行业动态 FDA已批准超1000项临床AI应用，以放射学为主，且审批流程简化趋势明显；全球AI医疗市场规模预计以超37%的复合年增长率增长，行业热度持续攀升。
-📊 高频期刊 TOP10    期刊 IF 篇数     BMC Med Inform Decis Mak 3.5 2   Cell Host Microbe 45.5 2   Eur Heart J 39.3 2   Int Dent J 2.5 2   Int J Med Inform 5.</description>
-    </item>
-    
-  </channel>
-</rss>
+📊 高频期刊 TOP10 期刊 IF 篇数 BMC Med Inform Decis Mak 3.5 2 Cell Host Microbe 45.5 2 Eur Heart J 39.3 2 Int Dent J 2.5 2 Int J Med Inform 5.</description></item></channel></rss>

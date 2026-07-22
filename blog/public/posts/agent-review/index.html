@@ -1,0 +1,134 @@
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<title>AI Agent 辅助期末复习经验 | 苏菲的工房</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="武汉大学临床医学八年制，医学 AI。">
+<meta property="og:title" content="AI Agent 辅助期末复习经验">
+<meta property="og:description" content="武汉大学临床医学八年制，医学 AI。">
+<meta property="og:url" content="https://jerryli.cn/posts/agent-review/">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Noto+Sans+SC:wght@400;500&display=swap" rel=stylesheet>
+<link rel=icon href="/favicon.ico?v=2">
+<link rel=stylesheet href="/css/style.css?v=1784725825">
+</head>
+<body>
+<header>
+<h1><a href=/>苏菲的工房</a></h1>
+<nav>
+<a href=/>首页</a>
+<div class=dropdown>
+<a href=/posts class=dropbtn>博客</a>
+<div class=dropdown-content>
+<a href=/tags/%E6%96%B9%E6%B3%95/>方法</a>
+<a href=/tags/%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95/>成长记录</a>
+<a href=/thoughts/>随想</a>
+</div>
+</div>
+<a href=/about>关于</a>
+<span class=theme-switch>
+<span id=theme-toggle title=切换亮暗></span>
+</span>
+</nav>
+</header>
+<main>
+<article>
+<h2>AI Agent 辅助期末复习经验</h2>
+<span class=tag>[方法]</span>
+<time>2026-07-22</time>
+<blockquote>
+<p><strong>先说明几点：</strong> 第一，以下内容均为本人个人经验和感受，不一定对你适用；第二，本人期末几乎完全靠这个复习，也勉强算得上是有了实战经验；第三，以下涉及的内容均为示例，读者也可根据自己情况进行修改和调整。</p>
+</blockquote>
+<hr>
+<p>本篇为第一篇，介绍我是如何简单配置模型和 Agent 的。</p>
+<p>首先，我们需要了解什么是 <a href=https://en.wikipedia.org/wiki/Large_language_model>LLM</a>（维基百科）、<a href=https://platform.openai.com/docs/guides/agents>Agent</a>（OpenAI，ChatGPT/Codex 的公司）/ <a href=https://www.anthropic.com/engineering/building-effective-agents>Agent</a>（Anthropic）、<a href=https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction>API</a>（MDN）/ <a href=https://platform.openai.com/docs/api-reference>API</a>（OpenAI）、<a href=https://en.wikipedia.org/wiki/Workflow>Workflow</a>（维基百科）、<a href=https://en.wikipedia.org/wiki/Optical_character_recognition>OCR</a>（维基百科），我在这里引用一些文档供大家学习。</p>
+<p>我们也可以看看锦恢大佬的教程（暂未完结）：</p>
+<ul>
+<li><a href="https://kirigaya.cn/blog/article?seq=351">https://kirigaya.cn/blog/article?seq=351</a></li>
+<li><a href="https://kirigaya.cn/blog/article?seq=374">https://kirigaya.cn/blog/article?seq=374</a></li>
+<li><a href="https://kirigaya.cn/blog/article?seq=376">https://kirigaya.cn/blog/article?seq=376</a></li>
+<li><a href="https://kirigaya.cn/blog/article?seq=382">https://kirigaya.cn/blog/article?seq=382</a></li>
+</ul>
+<p>这个更适合新人而非开发者。</p>
+<p>我们实际上并不需要完全理解里面的原理，毕竟我们是医学生，不是程序员。所以接下来我会用自己的案例来演示如何构建一个属于自己的 Agent。</p>
+<h2 id=第一步获取-api-key>第一步：获取 API Key</h2>
+<p>首先，我们需要拥有一个 LLM 公司的账号，注册之后查看他们关于 API 调用的官方文件。比如说：</p>
+<ul>
+<li><strong>阿里云</strong>（主要是 Qwen LLM / Qwen OCR）：<a href="https://help.aliyun.com/zh/api-gateway/traditional-api-gateway/user-guide/create-an-api?spm=5176.30275541.J_ZGek9Blx07Hclc3Ddt9dg.35.e5292f3dBTlgau">官方文档</a></li>
+<li><strong>DeepSeek</strong>：<a href=https://api-docs.deepseek.com/zh-cn/>API 文档</a></li>
+<li><strong>OpenAI</strong>（ChatGPT）：<a href=https://developers.openai.com/api/docs/quickstart>开发者文档</a></li>
+<li><strong>小米</strong>（mimo）：<a href=https://mimo.mi.com/docs/zh-CN/quick-start/summary/first-api-call>快速开始</a></li>
+<li><strong>智谱</strong>（GLM）：<a href=https://docs.bigmodel.cn/cn/guide/start/quick-start>快速开始</a></li>
+</ul>
+<p>当然，还有其他的 LLM 和提供商，以及自己部署模型后为你提供服务的厂商（比如腾讯元宝），但这就不在我们的讨论范围了。</p>
+<p>在这里我要补充很重要的一点：<strong>DeepSeek 这种 LLM 是纯文字模型</strong>（至少在我写的时候是这样，网页版有识图模式，但 API 暂时还没有。平时我们上传图片让 DeepSeek 解答的时候，本质上是 AI 提取文字之后再解答，因此也会出现未识别到文字的提示）。豆包/Kimi/mimo 等不少模型都支持多模态（图像、文字、视频、音频），所以如果你想要分析和制作图片的话慎用 DeepSeek，我个人这方面的工作是让 Qwen-vl-max 去做的。</p>
+<p>粗略看过一遍后，我们接下来按照上面的方法，创建一个 API key。</p>
+<blockquote>
+<p><strong>注意：</strong> 请务必在创建之后以文档（txt）的方式将你的 key 保存下来，你将无法再次查看这串字符。<a href=https://git-scm.com/doc>GitHub</a>（Git Official）token 同理。确定你已经保存且进行了合适的命名（比如 <code>DeepSeek API key</code>）后，再继续下一步。</p>
+</blockquote>
+<p>如果你有免费的额度，或者你只是想试一试，可以稍微充个下限（注意，不同公司对充值的下限要求可能不同，你可以选择自定义价格），毕竟没必要一上来就充那么多钱。在确定你已经创建了 key，且 key 内有可用的额度。</p>
+<h2 id=第二步选择-agent>第二步：选择 Agent</h2>
+<p>我们接下来就到了选择 <a href=https://platform.openai.com/docs/guides/agents>Agent</a> 的时间：</p>
+<ul>
+<li><a href=https://docs.openclaw.ai/#quick-start>OpenClaw</a></li>
+<li><a href=https://hermes-agent.nousresearch.com/docs>Hermes</a></li>
+<li><a href=https://opencode.ai/docs/zh-cn>OpenCode</a></li>
+<li><a href=https://learn.chatgpt.com/docs>Codex</a></li>
+</ul>
+<p>以上这些都是 Agent。我有两个比较推荐的视频，大家可以看看——是一个叫 <strong>网络小白_Uncle城</strong> 的 UP 主制作的，比文档更容易上手：</p>
+<ul>
+<li><a href=https://www.bilibili.com/video/BV1iBwsznEsn/>视频一</a></li>
+<li><a href=https://www.bilibili.com/video/BV17xo9BsEnx/>视频二</a></li>
+</ul>
+<p>关于 Agent 我们要注意几点：首先是电脑操作系统的问题，如果你的系统和我一样是 Windows 的话，那步骤就和我的一样；如果是 MacOS/Linux 等 UNIX 系统的话，操作又会有不同。如果大家有什么不懂的也可以直接去问问 AI，他们在这类问题上可以给你进行解答。</p>
+<p>接下来，我们需要下载一个 Agent。首先我们需要选择厂商，比如 OpenClaw / Codex / OpenCode / Hermes，他们各有各的优点和缺点，大家根据需求自行选择。</p>
+<p>第二个要注意的问题就是，Agent 的使用方式，也就是 <a href=https://en.wikipedia.org/wiki/Command-line_interface>CLI</a>（维基百科）/ <a href=https://github.com/resources/articles/what-is-a-cli>CLI</a>（GitHub）/ <a href=https://en.wikipedia.org/wiki/Text-based_user_interface>TUI</a>（维基百科）/ <a href=https://en.wikipedia.org/wiki/Graphical_user_interface>GUI</a>（维基百科），大家可以根据喜好自行选择，我现在用的就是 TUI。</p>
+<p>接下来是下载环节。Agent 有几种下载方式：如果你选择的是 CLI/TUI，那么你可以直接在 PowerShell（Windows）/ Terminal（MacOS/Linux）复制下载的指令进行下载；GUI 或者是桌面软件就直接像下载软件一样。</p>
+<p>我们下载好之后，注意将 Agent 加入 <a href=https://en.wikipedia.org/wiki/PATH_(variable)>PATH</a>（维基百科），这样之后使用会方便很多。如果有什么依赖的环境，按照 AI 的指导一步步解决就好。</p>
+<h2 id=第三步配置模型>第三步：配置模型</h2>
+<p>现在打开我们下载好的 Agent，我们根据官方文档上配置模型的路线一步步走。首先是选择供应商，注意对于非 OpenAI/Anthropic 的厂商，需要仔细阅读文档，确认他们支持哪种格式。比如 DeepSeek 就同时支持 OpenAI 和 Anthropic 两种格式。选择之后，我们需要将刚刚创建的 API key 输入，同时输入 LLM 厂商的 API 地址，比如 DeepSeek 的链接就分为这两种。</p>
+<p>配置完成之后，我们需要选择使用的模型，比如 DeepSeek 有 DeepSeek v4 Flash 和 v4 Pro 两种模型。不同模型和厂商的参数、定价都有不同，不要盲目上最贵的模型（当然如果你很有钱另说）。</p>
+<p>一切顺利的话，接下来，我们可以试着调整各项设置，比如 reasoning effort、reasoning on/off、<code>/color</code> 什么的，这个可以根据官方文档以及各类教程进行探索。接下来发一条简短的消息给 Agent，可以是"请复述这段话 &lsquo;Hello, World&rsquo;"，如果成功返回 Hello, World 就说明成功；没有的话，就询问 AI 是什么地方出错了。</p>
+<blockquote>
+<p><strong>注意：</strong> 最好手动设置 Agent 的工作目录，不然到时候找不到东西就麻烦了。我是在 D 盘单独设置了一个 Agent 同名文件夹为工作目录，规定所有的缓存和日志 / 任务输出全部放在这个文件夹里。还有，记得做好文件分级管理，定期清理缓存和任务过程中的中间文档，做好备份。不然的话，过几个月里面全是不知道是什么的文件，找不到想要的文档可是非常让人头疼的。</p>
+</blockquote>
+<h2 id=第四步建立复习-workflow>第四步：建立复习 Workflow</h2>
+<p>以上内容解决之后，接下来就是我如何利用 Agent 帮助我复习课程的 <a href=https://en.wikipedia.org/wiki/Workflow>Workflow</a>（维基百科）了。</p>
+<p>对于我们医学生而言，蓝皮书实在是太厚了，尤其是当你期末既要看书又要看 PPT，甚至可能还要刷题，任务量巨大，让人不知所措。所以我就借用 Agent 来辅助我完成期末复习。</p>
+<h3 id=41-整理资料>4.1 整理资料</h3>
+<p>首先，清点我们手头上的复习资料：</p>
+<ul>
+<li>教科书的 PDF（蓝皮书 PDF 没有的话，可以到 B 站或者公众号上找；如果是自编教材没有 PDF 的话就无能为力了）</li>
+<li>PPT</li>
+<li>讲义？或者说一篇包含所有重点页码的 Word 文档？</li>
+</ul>
+<h3 id=42-转换与-ocr>4.2 转换与 OCR</h3>
+<p>接下来，我们需要将这些东西转换为 AI 能够阅读的东西。就我个人而言，简要的流程是这样的：</p>
+<p>获取和整理所有的课程资料，按学科分门别类建立文件夹。比如我的就是：</p>
+<pre tabindex=0><code>D:\Hermes\course_file\临五医学教材\（各类课程PDF）
+D:\Hermes\course_file\生理学\（PPT）
+</code></pre><p>这样既方便自己查漏补缺，也方便进行文档管理，提升工作效率。</p>
+<p>整理好文档后，让 AI 将这些文件编号（方便找），并按照编号进行处理。处理的方式是：首先自己查看一遍 PPT，如果有很多示意图什么的，就不能按文字和图表的处理方式，我等会会说。如果没有，我们就要求 Agent 对目录下的所有文件进行视觉分析，提取其中所有的文字，并保留原有的结构。（这一步很难一次成功，个人经验：概率主要取决于 PDF 的清晰程度。）</p>
+<p>然后对每个文档任务进行到 1/3 时，对 <a href=https://en.wikipedia.org/wiki/Optical_character_recognition>OCR</a>（维基百科）产生的 <a href=https://daringfireball.net/projects/markdown/>Markdown</a>（官方）文档检测准确率（这一步可以进行样本量较大的抽样调查），也就是是否存在乱码、结构混乱、字符错误（比如经典的"锟斤拷"&ldquo;烫烫烫"或者是不明的黑块），页码是否正确，有没有 OCR 时加入的版权页。每个文档经过这样的三次审核后，再整体抽样。所有检查成功通过后处理下一个文档。所有文档处理完成后，再有人工审核。一般经过这么几次后，准确率也基本够用了。</p>
+<p>然后，我们让 AI 建立检索，不然的话不好找到每一个知识点出现的位置。到这里为止，我们就算完成了一个课程知识库的构建。</p>
+<h3 id=43-刷题>4.3 刷题</h3>
+<p>接下来，有了知识库，我们还需要刷题。这有几种办法：</p>
+<ol>
+<li><strong>你能找到题库并下载下来</strong>，放到目录</li>
+<li><strong>让 AI 自主提问</strong></li>
+</ol>
+<p>当然如果你有一份重点内容的文档，这个过程就会轻松得多。</p>
+<h3 id=44-实践>4.4 实践</h3>
+<p>最后就是实践——通过和 AI 利用知识库进行问答巩固知识，应对考试。</p>
+<hr>
+<p><em>由 Jerry Li 撰写 · 首发于 <a href=https://jerryli.cn>jerryli.cn</a></em></p>
+</article>
+</main>
+<footer>
+<p>© 2026 李文韬</p>
+<p>Built with Hugo & ❤️ · Hosted on Cloudflare</p>
+</footer>
+<script>(()=>{const a='theme-pref',c=document.getElementById('theme-toggle'),d='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>',e='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';function b(){const b=localStorage.getItem(a)||'dark';document.documentElement.setAttribute('data-theme',b),c&&(c.innerHTML=b==='dark'?e:d)}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',b):b(),document.addEventListener('click',c=>{if(c.target.closest('#theme-toggle')){const c=localStorage.getItem(a)||'dark',d=c==='dark'?'light':'dark';localStorage.setItem(a,d),b()}})})()</script>
+</body>
+</html>

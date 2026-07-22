@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>月报 on 李文韬</title>
-    <link>https://jerryli.cn/reports/monthly/</link>
-    <description>Recent content in 月报 on 李文韬</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/monthly/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>医学AI 月报</title>
-      <link>https://jerryli.cn/reports/monthly/monthly_2026-06/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/monthly/monthly_2026-06/</guid>
-      <description>医学AI 月报 期间: 2026-06-01 ~ 2026-06-30 生成时间: 2026-07-20 17:36 论文总数: 23 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期论文以AI在医疗中的前沿应用为主，特别是大语言模型（LLM）的临床决策支持、检索增强生成（RAG）、自主AI代理、隐私保护及数据互操作性等方向，同时涵盖微生物组、眼科、急诊分诊、术后管理等具体场景，表明AI正从概念验证向临床落地快速推进。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>月报 on 苏菲的工房</title><link>https://jerryli.cn/reports/monthly/</link><description>Recent content in 月报 on 苏菲的工房</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/monthly/index.xml" rel="self" type="application/rss+xml"/><item><title>医学AI 月报</title><link>https://jerryli.cn/reports/monthly/monthly_2026-06/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/monthly/monthly_2026-06/</guid><description>医学AI 月报 期间: 2026-06-01 ~ 2026-06-30 生成时间: 2026-07-20 17:36 论文总数: 23 | 行业新闻: 33 条
+一、本期概览 📄 论文动态 本期论文以AI在医疗中的前沿应用为主，特别是大语言模型（LLM）的临床决策支持、检索增强生成（RAG）、自主AI代理、隐私保护及数据互操作性等方向，同时涵盖微生物组、眼科、急诊分诊、术后管理等具体场景，表明AI正从概念验证向临床落地快速推进。
 🏭 行业动态 行业动态高度聚焦于AI医疗设备的监管与审批，包括FDA简化AI/ML设备审批流程、AHA致FDA信函、以及市场增长预测。同时Google DeepMind等巨头持续推动临床AI新模式，显示监管与技术创新双轮驱动行业成熟。
-📊 高频期刊 TOP10    期刊 IF 篇数     NPJ Digit Med 12.4 2   Nat Med 58.7 2   J Med Internet Res 5.8 2   Med 8.6 2   Digit Health 23.8 2   Gut 19.</description>
-    </item>
-    
-  </channel>
-</rss>
+📊 高频期刊 TOP10 期刊 IF 篇数 NPJ Digit Med 12.4 2 Nat Med 58.7 2 J Med Internet Res 5.8 2 Med 8.6 2 Digit Health 23.8 2 Gut 19.</description></item></channel></rss>

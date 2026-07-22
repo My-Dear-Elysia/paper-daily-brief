@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>季报 on 李文韬</title>
-    <link>https://jerryli.cn/reports/quarterly/</link>
-    <description>Recent content in 季报 on 李文韬</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/quarterly/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>医学AI 季报（2026Q2）</title>
-      <link>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</guid>
-      <description>医学AI 季报（2026Q2） 期间: 2026-04-01 ~ 2026-06-30 生成时间: 2026-07-20 17:20 论文总数: 25 | 行业新闻: 33 条
- 一、本期概览 📄 论文动态 本期15篇论文聚焦AI在医疗领域的深度应用，尤其是大语言模型（LLM）在临床决策支持、心理治疗、药物分析中的创新，以及RAG技术优化。同时涵盖AI驱动的早期癌症检测（液体活检、影像组学）、药物抵抗机制、CAR T靶点识别等。基础研究方面包括儿科肿瘤结构变异和免疫球蛋白编辑机制。整体呈现从算法验证向临床落地转化的趋势。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>季报 on 苏菲的工房</title><link>https://jerryli.cn/reports/quarterly/</link><description>Recent content in 季报 on 苏菲的工房</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/quarterly/index.xml" rel="self" type="application/rss+xml"/><item><title>医学AI 季报（2026Q2）</title><link>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/quarterly/quarterly_2026q2/</guid><description>医学AI 季报（2026Q2） 期间: 2026-04-01 ~ 2026-06-30 生成时间: 2026-07-20 17:20 论文总数: 25 | 行业新闻: 33 条
+一、本期概览 📄 论文动态 本期15篇论文聚焦AI在医疗领域的深度应用，尤其是大语言模型（LLM）在临床决策支持、心理治疗、药物分析中的创新，以及RAG技术优化。同时涵盖AI驱动的早期癌症检测（液体活检、影像组学）、药物抵抗机制、CAR T靶点识别等。基础研究方面包括儿科肿瘤结构变异和免疫球蛋白编辑机制。整体呈现从算法验证向临床落地转化的趋势。
 🏭 行业动态 行业动态围绕FDA对AI医疗器械的监管政策调整，包括简化审批流程、建立分类体系（1016项授权设备分析）、强调风险收益报告。同时市场报告显示AI医疗健康市场以37.66% CAGR持续增长，多家机构推动AI作为临床共治模式（co-clinician），Google DeepMind等头部力量加速布局。监管与商业化双轮驱动行业进入快车道。
-📊 高频期刊 TOP10    期刊 IF 篇数     Nature 50.5 3   J Med Internet Res 5.8 2   Cell 45.5 2   Cancer Cell 31.7 2   J Am Med Inform Assoc 6.4 2   Eur J Cancer 7.</description>
-    </item>
-    
-  </channel>
-</rss>
+📊 高频期刊 TOP10 期刊 IF 篇数 Nature 50.5 3 J Med Internet Res 5.8 2 Cell 45.5 2 Cancer Cell 31.7 2 J Am Med Inform Assoc 6.4 2 Eur J Cancer 7.</description></item></channel></rss>

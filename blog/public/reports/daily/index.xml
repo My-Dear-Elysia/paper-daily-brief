@@ -1,74 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>日报 on 李文韬</title>
-    <link>https://jerryli.cn/reports/daily/</link>
-    <description>Recent content in 日报 on 李文韬</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/daily/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>每日医学AI论文简报 v0.2</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-21/</link>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-21/</guid>
-      <description>每日医学AI论文简报 v0.2 日期: 2026-07-21 07:01 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
- 💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
- 1. Reliability of Large Language Model Generated Clinical Reasoning in Assisted Reproductive Technology: Blinded Comparative Evaluation Study. J Med Internet Res (IF: 5.8) | 2026 Jan 8 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日报 on 苏菲的工房</title><link>https://jerryli.cn/reports/daily/</link><description>Recent content in 日报 on 苏菲的工房</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jerryli.cn/reports/daily/index.xml" rel="self" type="application/rss+xml"/><item><title>每日医学AI论文简报 v0.2</title><link>https://jerryli.cn/reports/daily/daily_2026-07-21/</link><pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-21/</guid><description>每日医学AI论文简报 v0.2 日期: 2026-07-21 07:01 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
+💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
+1. Reliability of Large Language Model Generated Clinical Reasoning in Assisted Reproductive Technology: Blinded Comparative Evaluation Study. J Med Internet Res (IF: 5.8) | 2026 Jan 8 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
 领域: 辅助生殖技术（ART）中的临床推理与可解释医学人工智能
 方法: 盲法比较评估研究。在临床试验中心，由资深生殖医学专家对三种提示策略（零样本、随机少样本、选择性少样本）生成的大语言模型思维链（CoT）进行打分，并比较专家评分与GPT-4o模型自动评估的结果。
 核心发现: 选择性少样本策略（基于“金标准深度”与“代表性多样性”双重原则）在逻辑清晰度、关键信息使用和临床准确性上显著优于其他策略（P&amp;lt;.001）；随机少样本策略与零样本基线无显著差异，表明低质量示例无效；AI评估者（GPT-4o）无法识别这些关键差异，凸显人类专家在评估生成临床数据中的不可替代性。
 相关度（医学AI研究者）: 极高——直接回答了LLM生成临床思维链的可靠性问题，揭示了提示设计策略的关键性，并指出了当前AI自动评估的局限性，对构建可信、可解释的医学AI系统具有重要指导价值。
-一句话: 在辅助生殖技术中，采用“选择性少样本”（基于高质量、多样化示例）提示策略能显著提升LLM生成临床思维链的可靠性，而随机低质量示例或零样本策略效果不佳，且现有AI评估无法捕捉这种差异。 </description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.2</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-20/</link>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-20/</guid>
-      <description>每日医学AI论文简报 v0.2 日期: 2026-07-20 07:03 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
- 💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
- 1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
+一句话: 在辅助生殖技术中，采用“选择性少样本”（基于高质量、多样化示例）提示策略能显著提升LLM生成临床思维链的可靠性，而随机低质量示例或零样本策略效果不佳，且现有AI评估无法捕捉这种差异。</description></item><item><title>每日医学AI论文简报 v0.2</title><link>https://jerryli.cn/reports/daily/daily_2026-07-20/</link><pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-20/</guid><description>每日医学AI论文简报 v0.2 日期: 2026-07-20 07:03 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
+💡 今日学习推荐 CS231n 卷积神经网络（Stanford） — 一、卷积神经网络（CNN）架构（进度0%） ⏭ 下一步：CS229 机器学习讲义（Andrew Ng）
+1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed ⚠️ | DOI 📄全文 分析来源: PMC全文
 领域: 精准肿瘤学、医学人工智能、大语言模型（LLM）
 方法: 开发了一个基于检索增强生成（RAG）的大语言模型工作流，以分子肿瘤学知识库（Molecular Oncology Almanac, MOAlmanac）作为上下文来源。在合成查询和来自执业肿瘤学家的真实世界查询上，对比了RAG-LLM与纯LLM方法的治疗推荐准确性，并探索了多种提示与检索策略以优化性能。
 核心发现: RAG-LLM在合成查询上达到95%的准确率，在真实世界查询上达到93%的准确率，显著优于仅使用LLM的方法。结果表明，结合动态更新的专业知识库能有效提升LLM在精准肿瘤学治疗推荐中的准确性，为临床部署提供了可行框架。
 相关度（医学AI研究者）: 高。研究直接针对临床决策支持中的LLM知识滞后与幻觉问题，提出了可复现的RAG解决方案，并验证了其在真实场景中的有效性，对推动医学AI落地具有重要参考价值。
-一句话: 通过检索增强生成（RAG）为LLM注入分子肿瘤学专业知识，该框架在精准肿瘤学治疗推荐中达到93%以上准确率，为临床LLM部署提供了可靠路径。 2. General-purpose large language models outperform specialized clinical AI tools on medical benchmarks.</description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.2</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-19/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-19/</guid>
-      <description>每日医学AI论文简报 v0.2 日期: 2026-07-19 18:36 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
- 1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed | DOI 📄全文 分析来源: PMC全文
+一句话: 通过检索增强生成（RAG）为LLM注入分子肿瘤学专业知识，该框架在精准肿瘤学治疗推荐中达到93%以上准确率，为临床LLM部署提供了可靠路径。 2. General-purpose large language models outperform specialized clinical AI tools on medical benchmarks.</description></item><item><title>每日医学AI论文简报 v0.2</title><link>https://jerryli.cn/reports/daily/daily_2026-07-19/</link><pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-19/</guid><description>每日医学AI论文简报 v0.2 日期: 2026-07-19 18:36 来源: PubMed | 分析: DeepSeek-v4-flash（有PMC全文时基于全文分析） 期刊IF: 2024-2025 JCR（部分期刊未收录→N/A待补充）
+1. A context-augmented large language model for accurate precision oncology medicine recommendations. Cancer Cell (IF: 31.7) | 2026 Mar 9 | PubMed | DOI 📄全文 分析来源: PMC全文
 领域: 精准肿瘤学、医学人工智能、大型语言模型（LLM）、检索增强生成（RAG）
 方法: 开发了一种基于检索增强生成（RAG）的LLM工作流，利用Molecular Oncology Almanac（MOAlmanac）作为外部知识库，与仅使用LLM的方法进行对比。在合成查询和来自执业肿瘤学家的真实世界查询上评估性能，并探索了多种提示工程和检索策略以优化推荐准确性。
 核心发现: RAG-LLM在合成查询中达到95%准确率，在真实世界查询中达到93%准确率，显著优于仅依赖通用知识的LLM方法。该框架能够动态整合最新的FDA批准信息和分子标志物-治疗关系，有效弥补了LLM知识滞后问题，为精准肿瘤学临床决策提供了可靠支持。
 相关度（医学AI研究者）: 高。该研究直接解决了LLM在临床应用中的知识更新瓶颈，提供了可部署的上下文增强框架，对推动AI辅助肿瘤治疗决策具有重要参考价值。
-一句话: 本研究通过检索增强生成（RAG）框架将MOAlmanac知识库与LLM结合，在真实世界肿瘤学查询中达到93%准确率，显著优于纯LLM方法，为精准肿瘤学治疗推荐提供了准确、动态更新的AI解决方案。 2. Artificial intelligence in nuclear medicine. Br J Radiol (IF: 2.0) | 2026 Jul 1 | PubMed | DOI 分析来源: 摘要</description>
-    </item>
-    
-    <item>
-      <title>每日医学AI论文简报 v0.1</title>
-      <link>https://jerryli.cn/reports/daily/daily_2026-07-18/</link>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://jerryli.cn/reports/daily/daily_2026-07-18/</guid>
-      <description>每日医学AI论文简报 v0.1 日期: 2026-07-18 22:57 来源: PubMed | 分析: DeepSeek-v4-flash
- 1. HR3/RORα-mediated cholesterol sensing regulates TOR signaling. Nat Commun | 2026 Mar 30 | PMID: 41912517 领域: 细胞信号转导、胆固醇感知、TOR信号通路、核受体生物学
+一句话: 本研究通过检索增强生成（RAG）框架将MOAlmanac知识库与LLM结合，在真实世界肿瘤学查询中达到93%准确率，显著优于纯LLM方法，为精准肿瘤学治疗推荐提供了准确、动态更新的AI解决方案。 2. Artificial intelligence in nuclear medicine. Br J Radiol (IF: 2.0) | 2026 Jul 1 | PubMed | DOI 分析来源: 摘要</description></item><item><title>每日医学AI论文简报 v0.1</title><link>https://jerryli.cn/reports/daily/daily_2026-07-18/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate><guid>https://jerryli.cn/reports/daily/daily_2026-07-18/</guid><description>每日医学AI论文简报 v0.1 日期: 2026-07-18 22:57 来源: PubMed | 分析: DeepSeek-v4-flash
+1. HR3/RORα-mediated cholesterol sensing regulates TOR signaling. Nat Commun | 2026 Mar 30 | PMID: 41912517 领域: 细胞信号转导、胆固醇感知、TOR信号通路、核受体生物学
 方法: 果蝇遗传学、人类细胞系实验、胆固醇结合与TOR激活的生化分析、非基因组与基因组调控机制探究
 核心发现: 核受体HR3（哺乳动物RORα同源物）作为胆固醇传感器，通过 2. Clinical AI in Radiology: Foundations, Trends, Applications, and Emerging Directions. Cancers (Basel) | 2026 Mar 13 | PMID: 41899545 领域: 临床放射学人工智能
 方法: 综述当前趋势与代表性应用，包括大型语言模型（LLMs）本地部署、多模态AI框架、联邦学习（FL）基础设施、以及不确定性感知的去标识化流程。
 核心发现: AI可增强诊断、优化工作流并提升运营效率，但隐私、临床可用性和兼容性仍是主要挑战；文中示例展示了LLM报告重构、胰腺癌恶病质早期检测、隐私保护协作训练以及PHI安全移除等进展。
 相关度（医学AI研究者）: 高，直接涉及肿瘤委员会决策支持、临床试验匹配、报告质量保证及成像复杂性指数等新兴方向，为落地实践提供可参考框架。
-一句话: 该综述梳理了放射学临床AI的基础与趋势，并通过四个具体应用案例（LLM报告生成、多模态癌症筛查、联邦学习、去标识化流程）展示了其转化潜力与现存挑战。 3. Foundation models for ophthalmic imaging. Surv Ophthalmol | 2026 Jul-Aug | PMID: 41619947 领域: 眼科影像基础模型</description>
-    </item>
-    
-  </channel>
-</rss>
+一句话: 该综述梳理了放射学临床AI的基础与趋势，并通过四个具体应用案例（LLM报告生成、多模态癌症筛查、联邦学习、去标识化流程）展示了其转化潜力与现存挑战。 3. Foundation models for ophthalmic imaging. Surv Ophthalmol | 2026 Jul-Aug | PMID: 41619947 领域: 眼科影像基础模型</description></item></channel></rss>
