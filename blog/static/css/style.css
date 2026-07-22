@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 32px;
   line-height: 2;
-  font-size: 22px;
+  font-size: clamp(16px, 2.2vw, 22px);
   color: #eee;
   position: relative;
 }
@@ -50,7 +50,7 @@ nav { margin-top: 12px; display: flex; align-items: center; flex-wrap: wrap; gap
 nav a {
   color: #666;
   text-decoration: none;
-  font-size: 20px;
+  font-size: clamp(15px, 1.8vw, 20px);
   font-weight: 500;
   padding: 4px 12px;
   border-radius: 6px;
@@ -86,7 +86,7 @@ main {
   min-height: 60vh;
   padding: 32px;
   border-radius: 12px;
-  font-size: 22px;
+  font-size: clamp(16px, 2.2vw, 22px);
   line-height: 2;
 }
 main h2 { font-size: 40px; font-weight: 600; margin-top: 0; }
