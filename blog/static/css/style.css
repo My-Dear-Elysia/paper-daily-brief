@@ -41,6 +41,7 @@ header {
   padding: 28px 24px;
   margin-bottom: 24px;
   border-radius: 12px;
+  overflow: visible;
 }
 [data-theme="dark"] header { border-bottom-color: #444; }
 header h1 { margin: 0; font-size: 56px; font-weight: 600; }
@@ -113,10 +114,10 @@ ul { padding-left: 24px; }
 li { margin-bottom: 10px; }
 
 /* Dropdown — inline with nav */
-.dropdown { position: relative; display: inline-flex; align-items: center; }
+.dropdown { position: relative; display: inline-flex; align-items: center; z-index: 100; }
 .dropbtn::after { content: " ▾"; font-size: 0.7em; opacity: 0.6; }
 .dropdown-content {
-  display: none; position: absolute; top: 100%; left: 0; z-index: 10;
+  display: none; position: absolute; top: 100%; left: 0; z-index: 999;
   white-space: nowrap; border-radius: 8px; overflow: hidden;
   padding: 4px 0;
 }
