@@ -91,6 +91,8 @@ main {
   border-radius: 12px;
   font-size: clamp(16px, 2.2vw, 22px);
   line-height: 2;
+  position: relative;
+  z-index: 1;
 }
 main h2 { font-size: 40px; font-weight: 600; margin-top: 0; }
 footer {
