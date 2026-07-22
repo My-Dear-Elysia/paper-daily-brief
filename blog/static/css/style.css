@@ -107,5 +107,7 @@ time { color: #999; font-size: 14px; }
 [data-theme="dark"] time { color: #bbb; }
 a { color: #2563eb; }
 [data-theme="dark"] a { color: #6ea8fe; }
+.tag { color: #888; font-size: 0.85em; }
+[data-theme="dark"] .tag { color: #aaa; }
 ul { padding-left: 24px; }
 li { margin-bottom: 10px; }
