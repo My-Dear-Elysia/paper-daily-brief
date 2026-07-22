@@ -42,6 +42,8 @@ header {
   margin-bottom: 24px;
   border-radius: 12px;
   overflow: visible;
+  position: relative;
+  z-index: 100;
 }
 [data-theme="dark"] header { border-bottom-color: #444; }
 header h1 { margin: 0; font-size: 56px; font-weight: 600; }
